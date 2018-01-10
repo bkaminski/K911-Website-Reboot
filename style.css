@@ -10,3 +10,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: k911
 Tags: k911, animal transport, pet emergency service, emergency pet transport service, animal ambulance, pet ambulance
 */
+
+
+
+.btn-rounded
+{
+	border-radius: 15rem;
+	border: 4px solid;
+}
