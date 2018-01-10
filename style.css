@@ -18,3 +18,17 @@ Tags: k911, animal transport, pet emergency service, emergency pet transport ser
 	border-radius: 15rem;
 	border: 4px solid;
 }
+
+/* Bootstrap overrides */
+.btn-warning
+{
+	color: #212529;
+  background-color: #f3ec1a;
+  border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    color: #212529;
+    background-color: #e5de18;
+    border-color: #f3ec1a;
+}
