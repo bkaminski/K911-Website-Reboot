@@ -41,3 +41,11 @@ add_action('pre_get_posts', 'tags_support_query');
 
 // Register Nav Menus
 register_nav_menus( array( $location => $description ) );
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+
+register_nav_menus( array(
+    'primary' => __( 'K911 Menu', 'k911' ),
+) );
+// Nav Walker
