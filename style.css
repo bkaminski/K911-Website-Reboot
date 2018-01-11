@@ -27,28 +27,30 @@ body
 }
 .emergency-modal-header
 {
-    background: #4b88a2;
+    background: #f3ec1a;
+    border-bottom: 3px solid #4b88a2;
 }
 .emergency-modal-footer
 {
     background: #d3d4d9;
+    border-top: 3px solid #4b88a2;
 }
 
 
 
 /* Bootstrap overrides */
-.btn-warning
+.btn-info
 {
-    color: #212529;
-    border-color: #ffc107;
-    background-color: #f3ec1a;
+    color: #fff;
+    border-color: #59a0be;
+    background-color: #4b88a2;
 }
 
-.btn-warning:hover
+.btn-info:hover
 {
-    color: #212529;
-    border-color: #f3ec1a;
-    background-color: #e5de18;
+    color: #fff;
+    border-color: #59a0be;
+    background-color: #559cba;
 }
 .dropdown-menu
 {
@@ -58,5 +60,9 @@ body
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     background-color: #4b88a2;
+}
+.modal-body
+{
+	background: #f9fcfa;
 }
 /*  End Bootstrap overrides */
