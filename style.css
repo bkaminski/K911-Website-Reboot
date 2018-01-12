@@ -1,6 +1,6 @@
 /*
-Theme Name: K911 Pet Trensport Service
-Theme URI: https://k911online.com
+Theme Name: K911 Pet Transport Service
+Theme URI: http://k911online.com
 Author: Ben Kaminski, Luci Karnai
 Author URI: https://benkaminski.com
 Description: Custom website and WordPress theme built exclusively for K911 Animal Transport. Fully responsive, mobile first designed, Bootstrap 4x powered theme with customizations and original design.
@@ -11,7 +11,7 @@ Text Domain: k911
 Tags: k911, animal transport, pet emergency service, emergency pet transport service, animal ambulance, pet ambulance
 */
 
-/* ========================= Globals ======================== */
+/* ========================= Globals ========================= */
 body
 {
     background: #f9fcfa;
@@ -20,7 +20,7 @@ a
 {
     outline: none;
 }
-/* ======================== End Globals ===================== */
+/* ========================= End Globals ========================= */
 
 /* ========================= Begin Navbar Styles ========================= */
 
@@ -64,20 +64,22 @@ a
 
 
 
-/* ========================= Bootstrap overrides ======================= */
-.navbar 
+/* ========================= Bootstrap overrides ========================= */
+.navbar
 {
-    padding: 0.5rem 0.5rem;
+    padding: .5rem .5rem;
+
     border-bottom: 3px solid #4b88a2;
 }
 .text-white
 {
-	color: #f9fcfa !important;
+    color: #f9fcfa !important;
 }
-.bg-dark 
+.bg-dark
 {
-    background-color: #000 !important;
     font-size: 24px;
+
+    background-color: #000 !important;
 }
 
 .btn-info
@@ -104,7 +106,8 @@ a
 }
 .modal-body
 {
-    background: #f9fcfa;
     padding: 0rem;
+
+    background: #f9fcfa;
 }
-/* ========================= End Bootstrap overrides =========================*/
+/* ========================= End Bootstrap overrides ========================= */
