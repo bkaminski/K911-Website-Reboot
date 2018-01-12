@@ -10,10 +10,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: k911
 Tags: k911, animal transport, pet emergency service, emergency pet transport service, animal ambulance, pet ambulance
 */
+
+/* ========================= Globals ======================== */
 body
 {
-	background: #f9fcfa;
+    background: #f9fcfa;
 }
+a
+{
+    outline: none;
+}
+/* ======================== End Globals ===================== */
+
+/* ========================= Begin Navbar Styles ========================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= End Navbar Styles ========================= */
 
 .btn-rounded
 {
@@ -27,28 +53,37 @@ body
 }
 .emergency-modal-header
 {
-    background: #f3ec1a;
     border-bottom: 3px solid #4b88a2;
+    background: #f3ec1a;
 }
 .emergency-modal-footer
 {
-    background: #d3d4d9;
     border-top: 3px solid #4b88a2;
+    background: #d3d4d9;
 }
 
 
 
-/* Bootstrap overrides */
+/* ========================= Bootstrap overrides ======================= */
+.text-white
+{
+	color: #f9fcfa !important;
+}
+.bg-dark 
+{
+    background-color: #000 !important;
+}
+
 .btn-info
 {
-    color: #fff;
+    color: #f9fcfa;
     border-color: #59a0be;
     background-color: #4b88a2;
 }
 
 .btn-info:hover
 {
-    color: #fff;
+    color: #f9fcfa;
     border-color: #59a0be;
     background-color: #559cba;
 }
@@ -63,6 +98,7 @@ body
 }
 .modal-body
 {
-	background: #f9fcfa;
+    background: #f9fcfa;
+    padding: 0rem;
 }
-/*  End Bootstrap overrides */
+/* ========================= End Bootstrap overrides =========================*/

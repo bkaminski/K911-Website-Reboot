@@ -9,7 +9,7 @@
 	       <button class="btn btn-outline-danger btn-rounded btn-lg pl-5 pr-5 mt-5 mb-5 text-uppercase"><i class="fa fa-mobile fa-lg mr-2" aria-hidden="true"></i><strong>Get Help Now</strong></button>
 	      </div>
 	      <div class="modal-footer emergency-modal-footer mt-2">
-	        <button type="button" class="btn btn-info" data-dismiss="modal">No, Continue to Website</button>
+	        <button type="button" class="btn btn-info text-white" data-dismiss="modal">No, Continue to Website</button>
 	      </div>
 	    </div>
 	  </div>
