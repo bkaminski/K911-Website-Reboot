@@ -65,6 +65,11 @@ a
 
 
 /* ========================= Bootstrap overrides ======================= */
+.navbar 
+{
+    padding: 0.5rem 0.5rem;
+    border-bottom: 3px solid #4b88a2;
+}
 .text-white
 {
 	color: #f9fcfa !important;
@@ -72,6 +77,7 @@ a
 .bg-dark 
 {
     background-color: #000 !important;
+    font-size: 24px;
 }
 
 .btn-info
