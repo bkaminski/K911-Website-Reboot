@@ -4,4 +4,3 @@
 <h3>Current Website Snapshot</h3>
 <p><a href="https://web.archive.org/web/20170929060439/http://www.k911online.com/">Available Here</a></p>
 
-<p>Update to README.md to test Slack App</p>
