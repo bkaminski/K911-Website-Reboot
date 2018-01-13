@@ -7,7 +7,7 @@ var $ = jQuery.noConflict();
 
 		//Add Bootstrap 4 Classes to Navigation
 		$("#menu-k911-menu").find('.menu-item').addClass('nav-item');
-		$("#menu-k911-menu").find('a').addClass('nav-link mr-2');	
+		$("#menu-k911-menu").find('a').addClass('nav-link mr-4');	
 	});
 	//end ready
 

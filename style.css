@@ -20,6 +20,30 @@ a
 {
     outline: none;
 }
+/* ========================= Mime Types for File Extensions ========================= */
+a[href$='.pdf']::after
+{
+    font-family: 'fontawesome';
+    font-weight: 400;
+
+    content: '\0020\f1c1';
+
+    color: inherit;
+}
+
+a[href$='.docx']::after
+{
+    font-family: 'fontawesome';
+    font-weight: 400;
+
+    content: '\0020\f1c2';
+
+    color: inherit;
+}
+
+/* ========================= End Mime Types ========================= */
+
+
 /* ========================= End Globals ========================= */
 
 /* ========================= Begin Navbar Styles ========================= */
@@ -69,7 +93,7 @@ a
 {
     padding: .5rem .5rem;
 
-    border-bottom: 3px solid #4b88a2;
+    border-bottom: 6px solid #4b88a2;
 }
 .text-white
 {
@@ -77,9 +101,20 @@ a
 }
 .bg-dark
 {
-    font-size: 24px;
+    font-size: 22px;
 
     background-color: #000 !important;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link
+{
+    color: #f9fcfa;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: #f9fcfa;
 }
 
 .btn-info
@@ -97,9 +132,11 @@ a
 }
 .dropdown-menu
 {
-    margin-top: 7px;
+    min-width: 250px;
+    margin-top: 27px;
 
     color: #f9fcfa;
+    border: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     background-color: #4b88a2;
