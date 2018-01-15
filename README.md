@@ -1,5 +1,15 @@
 <h1>K911 Website Re-Boot Project</h1>
-   <p>Custom Wordpress Theme for K911</p>
+<p>Design a Custom Wordpress Theme for K911 Animal Transport Service</p>
+<p>The objective of this project is to renew and revive a website that was designed using a "Website Builder" software package on a hosting service. A snapshot of the current/to be replaced website can be seen below:</p>
 
 <h3>Current Website Snapshot</h3>
 <p><a href="https://web.archive.org/web/20170929060439/http://www.k911online.com/">Available Here</a></p>
+
+<h3>Phase 1: WordPress Theme Development</h3>
+<p>It has been decided that moving the website to a CMS platform such as WordPress will provide for an easier to update website for the client. That being said, this repo is only tracking the WordPress "Theme" that is being built for the client. No need to track the entire WordPress engine. This theme will work on any WP build as an active parent theme and will be delivered via .zip file as all other WP themes are.</p>
+
+<p>Theme customizer options will be added to the theme in order to allow client to update specific portions of the website with ease. Bootstrap 4 is being used to handle the need for a responsive library that is mobile-first.</p>
+
+<p>The aim of the project is to allow easier requests for transport for people in emergent situations with their pets. The current website is difficult to navigate, espically on mobile. It also leaves the end user unsure of what steps to take to get their injured pet transported to a vetrinary clinic.</p>
+
+<p>The final product will be a fully functional CMS using WordPress that will allow for easy client updating and app-like design on mobile phones with a focus on those in emergent situations that need to take action immediately.</p>
