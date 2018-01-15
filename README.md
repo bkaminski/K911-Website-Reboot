@@ -10,6 +10,6 @@
 
 <p>Theme customizer options will be added to the theme in order to allow client to update specific portions of the website with ease. Bootstrap 4 is being used to handle the need for a responsive library that is mobile-first.</p>
 
-<p>The aim of the project is to allow easier requests for transport for people in emergent situations with their pets. The current website is difficult to navigate, espically on mobile. It also leaves the end user unsure of what steps to take to get their injured pet transported to a vetrinary clinic.</p>
+<p>The aim of the project is to allow easier requests for transport for people in emergent situations with their pets. The current website is difficult to navigate, especially on mobile. It also leaves the end user unsure of what steps to take to get their injured pet transported to a veterinary clinic.</p>
 
 <p>The final product will be a fully functional CMS using WordPress that will allow for easy client updating and app-like design on mobile phones with a focus on those in emergent situations that need to take action immediately.</p>
