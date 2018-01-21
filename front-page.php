@@ -11,4 +11,5 @@
 			</div>
 		</div>
 	</section>
+	<?php include get_template_directory() . '/inc/emergency-modal.php'; ?>
 <?php get_footer(); ?>
