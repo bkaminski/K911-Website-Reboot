@@ -74,9 +74,14 @@ a[href$='.docx']::after
 }
 .k911-info
 {
+    min-height: 330px;
     margin-top: 108px;
 
     background: #d3d4d9;
+    background-image: url('media/k911-web-logo.png'), url('media/squared-metal.png');
+    background-repeat: no-repeat, repeat;
+    background-position: center center, center center;
+    background-size: 300px, auto;
 }
 .k911-home
 {
@@ -85,6 +90,12 @@ a[href$='.docx']::after
 .k911-carousel
 {
     margin-top: 0;
+
+    box-shadow: -2px -2px 8px;
+}
+.text-shadow
+{
+    text-shadow: 2px 2px 2px #666;
 }
 
 /* ========================= End Custom Styles ========================= */
@@ -114,7 +125,7 @@ a[href$='.docx']::after
 }
 .bg-dark
 {
-    font-size: 16px;
+    font-size: 20px;
 
     background-color: #000 !important;
 }
@@ -146,7 +157,7 @@ a[href$='.docx']::after
 .dropdown-menu
 {
     min-width: 250px;
-    margin-top: 27px;
+    margin-top: 32px;
 
     color: #f9fcfa;
     border: 0;
@@ -176,16 +187,28 @@ a[href$='.docx']::after
     {
         margin-top: 108px;
     }
+    .bg-dark
+    {
+        font-size: 16px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px)
 {
+    .bg-dark
+    {
+        font-size: 18px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px)
 {
+    .bg-dark
+    {
+        font-size: 20px;
+    }
 }
 
 
