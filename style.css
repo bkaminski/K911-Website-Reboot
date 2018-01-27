@@ -15,6 +15,7 @@ Tags: k911, animal transport, pet emergency service, emergency pet transport ser
 body
 {
     background: #f9fcfa;
+    font-size: 1.1rem;
 }
 a
 {
@@ -78,10 +79,10 @@ a[href$='.docx']::after
     margin-top: 108px;
 
     background: #d3d4d9;
-    background-image: url('media/k911-web-logo.png'), url('media/squared-metal.png');
-    background-repeat: no-repeat, repeat;
-    background-position: center center, center center;
-    background-size: 300px, auto;
+    background-image: url('media/squared-metal.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
 }
 .k911-home
 {
