@@ -25,7 +25,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-  	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
       	<img src="<?php echo get_template_directory_uri(); ?>/media/apple-icon-76x76.png" alt="K911 Transport Service Logo">
       </a>
@@ -46,7 +46,7 @@
 	        );
         ?>
         <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-danger btn-lg my-2 my-sm-0 text-uppercase" type="submit">Get Help Now</button>
+          <button class="btn btn-danger btn-lg my-2 my-sm-0 text-uppercase btn-rounded" type="submit">Get Help Now</button>
         </form>
       </div>
     </nav>
