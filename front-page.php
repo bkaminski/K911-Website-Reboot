@@ -7,7 +7,6 @@
 					<p class="text-center">We are <strong>K911</strong>, your compassionate, reliable, 24 hour <u>emergency</u> and <u>non-emergency</u> animal transport company.</p>
 					<img class="img-fluid mx-auto d-block mb-2" height="225" width="225" src="<?php echo get_template_directory_uri(); ?>/media/k911-web-logo.png" alt="K911 Logo" />
 					<p class="text-center">Our team is dedicated to the safety, health, comfort, and security of your pet.</p>
-					<p class="text-center">For an appointment or more specific information regarding your particular needs, please feel free to <span class="text-uppercase">call us</span> at (302) 746-6006 or <span class="text-uppercase">contact us</span> here.
 				</div>
 				<div class="col-lg-8 p-0 k911-carousel">
 					<?php include get_template_directory() . '/inc/carousel.php'; ?>
@@ -19,6 +18,7 @@
 		<div class="container pt-5 pb-5">
 			<div class="row">
 				<div class="col-md-12">
+					<!-- <p class="text-center">For an appointment or more specific information regarding your particular needs, please feel free to <span class="text-uppercase">call us</span> at (302) 746-6006 or <span class="text-uppercase">contact us</span> here.</p> -->
 					<p class="text-center"><i class="fas fa-ambulance fa-5x" style="color: #4b88a2;"></i></p>
 					<h2 class="display-4 text-center mb-5">We specialize in pet transportation to and from veterinary practices, airports, and more throughout the Delaware Valley.</h2>
 					<h3 class="display-5 text-center text-info">Our staff of experienced animal handlers are available 24 hours a day, 7 days a week.</h3>

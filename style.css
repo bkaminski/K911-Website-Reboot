@@ -191,7 +191,7 @@ a img.aligncenter
 }
 .k911-carousel
 {
-    margin-top: 0;
+    margin-top: 0px;
 
     box-shadow: -2px -2px 8px;
 }
@@ -210,12 +210,17 @@ a img.aligncenter
 }
 .k911-footer
 {
-	min-height: 400px;
-	background: #000;
+    min-height: 400px;
+
+    background: #000;
 }
 .text-shadow
 {
     text-shadow: 2px 2px 2px #666;
+}
+.k911CarouselImg
+{
+    max-width: 100%;
 }
 
 /* ========================= End Custom Styles ========================= */
@@ -274,9 +279,9 @@ a img.aligncenter
     border-color: #59a0be;
     background-color: #559cba;
 }
-.text-info 
+.text-info
 {
-	color: #4b88a2 !important;
+    color: #4b88a2 !important;
 }
 .dropdown-menu
 {
@@ -325,8 +330,13 @@ a img.aligncenter
         font-size: 18px;
     }
     .k911-carousel
+{
+    margin-top: 108px;
+}
+
+    .k911CarouselImg
     {
-        margin-top: 108px;
+        max-width: 140%;
     }
 }
 
@@ -336,6 +346,10 @@ a img.aligncenter
     .bg-dark
     {
         font-size: 20px;
+    }
+    .k911CarouselImg
+    {
+        max-width: 100%;
     }
 }
 
