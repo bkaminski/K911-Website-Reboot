@@ -1,4 +1,4 @@
-			<div class="card-deck">
+			<div class="col-md card-deck mb-4">
 				<div class="card box-shadow">
 					<div class="card-header" style="background: #f3ec1a;">
 						<strong class="text-uppercase"><i class="fas fa-ambulance mr-2"></i>Emergency Transport:</strong>
@@ -13,6 +13,8 @@
       						<button class="btn btn-success btn-block btn-rounded box-shadow">Call Now</button>
     					</div>
 				</div>
+			</div>
+			<div class="col-md card-deck mb-4">
 				<div class="card box-shadow">
 					<div class="card-header" style="background: #f3ec1a;">
 						<strong class="text-uppercase"><i class="fas fa-bus mr-2"></i>Basic Transport:</strong>
@@ -25,6 +27,8 @@
       						<button class="btn btn-success btn-block btn-rounded box-shadow">Call Now</button>
     					</div>
 				</div>
+			</div>
+			<div class="col-md card-deck mb-4">
 				<div class="card box-shadow">
 					<div class="card-header" style="background: #f3ec1a;">
 						<strong class="text-uppercase"><i class="far fa-heart mr-2"></i>Deceased Pet Transport:</strong>

@@ -47,7 +47,9 @@
 	</section>
 	<section class="k911-content-2">
 		<div class="container pb-5 pt-5">
-			<?php include get_template_directory() . '/inc/card-stack.php'; ?>
+			<div class="row">
+				<?php include get_template_directory() . '/inc/card-stack.php'; ?>
+			</div>
 		</div>
 	</section>
 	<?php include get_template_directory() . '/inc/emergency-modal.php'; ?>
