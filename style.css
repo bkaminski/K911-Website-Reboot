@@ -235,6 +235,10 @@ a img.aligncenter
 {
     max-width: 100%;
 }
+.k911-carousel-title
+{
+    font-size: 6vw;
+}
 .k911-card-footer
 {
     background: #d3d4d9;
@@ -243,7 +247,10 @@ a img.aligncenter
     background-position: center center;
     background-size: auto;
 }
-
+.k911-mission
+{
+    font-size: 7vw;
+}
 /* ========================= End Custom Styles ========================= */
 
 /* ========================= Bootstrap overrides ========================= */
@@ -261,7 +268,7 @@ a img.aligncenter
 }
 .card-body
 {
-	background: #f9fcfa;
+    background: #f9fcfa;
 }
 .navbar
 {
@@ -346,6 +353,14 @@ a img.aligncenter
     .k911-carousel
     {
         margin-top: 0;
+    }
+    .k911-carousel-title
+    {
+        font-size: 2.5rem;
+    }
+    .k911-mission
+    {
+        font-size: 3.5rem;
     }
 }
 

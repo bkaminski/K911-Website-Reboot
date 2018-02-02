@@ -34,17 +34,17 @@
   			</div>
   		</div>
 	</section>
-	<section class="k911-content">
+	<main class="k911-content">
 		<div class="container pt-5 pb-5">
 			<div class="row">
 				<div class="col-md-12">
 					<p class="text-center"><i class="fas fa-ambulance fa-5x" style="color: #4b88a2;"></i></p>
-					<h2 class="display-4 text-center mb-5">We specialize in pet transportation to and from veterinary practices, airports, and more throughout the Delaware Valley.</h2>
+					<h2 class="display-4 k911-mission text-center mb-5">We specialize in pet transportation to and from veterinary practices, airports, and more throughout the Delaware Valley.</h2>
 					<h3 class="display-5 text-center text-info">Our staff of experienced animal handlers are available 24 hours a day, 7 days a week.</h3>
 				</div>
 			</div>
 		</div>
-	</section>
+	</main>
 	<section class="k911-content-2">
 		<div class="container pb-5 pt-5">
 			<div class="row">
