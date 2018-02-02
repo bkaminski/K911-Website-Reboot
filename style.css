@@ -231,7 +231,7 @@ a img.aligncenter
 {
     box-shadow: 2px 2px 6px #000;
 }
-.k911CarouselImg
+.k911-carousel-img
 {
     max-width: 100%;
 }
@@ -376,7 +376,7 @@ a img.aligncenter
         margin-top: 108px;
     }
 
-    .k911CarouselImg
+    .k911-carousel-img
     {
         max-width: 140%;
     }
@@ -389,7 +389,7 @@ a img.aligncenter
     {
         font-size: 20px;
     }
-    .k911CarouselImg
+    .k911-carousel-img
     {
         max-width: 100%;
     }
