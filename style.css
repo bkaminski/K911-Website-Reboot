@@ -251,6 +251,32 @@ a img.aligncenter
 {
     font-size: 7vw;
 }
+/* Pulsating CSS background */
+.help-button
+{
+    animation-name: color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    background-color: #dc3545;
+}
+
+@keyframes color
+{
+    0%
+    {
+        background-color: #dc3545;
+    }
+    50%
+    {
+        background-color: #7d2029;
+    }
+    100%
+    {
+        background-color: #dc3545;
+    }
+}
+/* End Pulsating color */
 /* ========================= End Custom Styles ========================= */
 
 /* ========================= Bootstrap overrides ========================= */
