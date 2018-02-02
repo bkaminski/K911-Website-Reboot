@@ -350,7 +350,8 @@ a img.aligncenter
 .dropdown-menu
 {
     min-width: 250px;
-    margin-top: 32px;
+    margin-top: 10px;
+    padding-left: 15px;
 
     color: #f9fcfa;
     border: 0;
@@ -406,6 +407,11 @@ a img.aligncenter
     {
         max-width: 140%;
     }
+    .dropdown-menu
+	{
+    	margin-top: 33px;
+    	padding-left: 0px;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
