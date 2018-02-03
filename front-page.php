@@ -3,13 +3,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-4 k911-info pt-2">
-					<h1 class="text-center"><strong>K911 Animal Transport</strong></h1>
+					<h1 class="text-center"><strong>K911 Pet Transport</strong></h1>
 					<p class="text-center">We are <strong>K911</strong>, your compassionate, reliable, 24 hour <u>emergency</u> and <u>non-emergency</u> animal transport company.</p>
 					<img class="img-fluid mx-auto d-block mb-2" height="200" width="200" src="<?php echo get_template_directory_uri(); ?>/media/k911-web-logo.png" alt="K911 Logo" />
-					<p class="text-center">Our team is dedicated to the safety, health, comfort, and security of your pet.
-						<br />
-						<a href="#" class="badge badge-success mt-2" style="font-size: 18px;">302.746.6006</a>
-					</p>
+					<p class="text-center">Our team is dedicated to the safety, health, comfort, and security of your pet.</p>
+					<p class="text-center"><a href="#" class="badge badge-success" style="font-size: 18px;">302.746.6006</a></p>
 				</div>
 				<div class="col-lg-8 p-0 k911-carousel">
 					<?php include get_template_directory() . '/inc/carousel.php'; ?>

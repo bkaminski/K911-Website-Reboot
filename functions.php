@@ -25,6 +25,12 @@ show_admin_bar(false);
 //Allow post and page "featured image"
 add_theme_support('post-thumbnails');
 
+//Allow RSS Feeds
+add_theme_support( 'automatic-feed-links' );
+
+//Allow post formats
+add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+
 // add tag support to pages
 function tags_support_all() {
   register_taxonomy_for_object_type('post_tag', 'page');
