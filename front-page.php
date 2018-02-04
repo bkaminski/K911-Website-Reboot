@@ -15,7 +15,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="k911-content-1">
+	<section class="home-content-1">
 		<div class="container pt-4 pb-4">
   			<h3 class="text-center text-white">For an appointment or more specific information regarding your particular needs, please feel free to:</h3>
   			<br />
@@ -32,7 +32,7 @@
   			</div>
   		</div>
 	</section>
-	<main class="k911-content">
+	<main class="home-content-2">
 		<div class="container pt-5 pb-5">
 			<div class="row">
 				<div class="col-md-12">
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 	</main>
-	<section class="k911-content-2">
+	<section class="home-content-3">
 		<div class="container pb-5 pt-5">
 			<div class="row">
 				<?php include get_template_directory() . '/inc/card-stack.php'; ?>

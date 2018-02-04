@@ -1,33 +1,48 @@
 <?php get_header(); ?>
-	<main class="main-content">
-		<div class="container k911-main-content">
+	<main class="page-body-content">
+		<div class="container page-main-content">
 			<div class="row">
-				<div class="col-lg">
+				<div class="col-lg-12">
+
+
 					<!-- start WordPress Loop -->
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<div class="alert alert-info mt-3">
-							<h1 class="display-4">
-								<!-- title entered in WordPress page editor -->
-								<?php the_title(); ?>
-							</h1>
-						</div>
 						
 
-						<!-- all content typed in WordPress Page editor -->
-						<div class="mt-4">
+						<div class="alert alert-info mt-3">
+							<h1 class="display-4 text-shadow">
+								
+								<!-- title entered in WordPress page editor -->
+								<?php the_title(); ?>
+
+
+							</h1>
+						</div>
+						<div class="mt-4 k911-main">
+
+
+							<!-- all content typed in WordPress Page editor -->
 							<?php the_content(); ?>
+
+
 						</div>
-						
-						<!-- post and page tags -->
-						<div class="k911-tags">
-							<?php the_tags('Related: '); ?>
-						</div>
-					
-					<?php endwhile; else : ?>
-						<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
-					<?php endif; ?>
-					<!-- end WordPress Loop -->
 				</div>
+				<div id="k911Tags" class="col-lg-12 k911-tags">
+					
+
+					<!-- post and page tags -->
+					<?php the_tags('<h6>Related Topics:</h6> '); ?>
+
+
+				</div>
+				
+
+				<!-- end WordPress Loop -->
+				<?php endwhile; else : ?>
+					<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
+				<?php endif; ?>
+
+
 			</div>
 		</div>
 	</main>
