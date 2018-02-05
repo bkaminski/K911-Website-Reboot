@@ -219,6 +219,12 @@ a img.aligncenter
     border-color: #59a0be;
     background-color: #dc3545;
 }
+.alert-secondary
+{
+    color: #000;
+    border-color: #666;
+    background-color: #d3d4d9;
+}
 
 .btn-info:hover
 {
@@ -487,7 +493,7 @@ a img.aligncenter
     }
     .dropdown-menu
     {
-        margin-top: 30px;
+        margin-top: 28px;
         padding-left: 0;
     }
     .btn-help

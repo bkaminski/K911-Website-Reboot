@@ -61,9 +61,9 @@ function bootstrap_fluid_images( $html ){
   $classes = 'img-fluid'; // Bootstrap 4.0.0-alpha.6
   // check if there are already classes assigned to the anchor
   if ( preg_match('/<img.*? class="/', $html) ) {
-    $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . ' $2', $html);
+    $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . '$2', $html);
   } else {
-    $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
+    $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="'. $classes .'"$2', $html);
   }
   // remove dimensions from images,, does not need it!
   $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
@@ -72,13 +72,13 @@ function bootstrap_fluid_images( $html ){
 add_filter( 'the_content','bootstrap_fluid_images',10 );
 add_filter( 'post_thumbnail_html', 'bootstrap_fluid_images', 10 );
 
-//Footer Custom Widget Area
+//Footer Custom Widget Area 1
 register_sidebar(array(
-  	'name' => __( 'K911 Footer Menu' , 'K911_Theme' ),
-  	'id' => 'k911_footer_menu',
-  	'description' => __( 'Footer Navigation' , 'K911_Theme' ),
+  	'name' => __( 'K911 Footer Left Side' , 'K911_Theme' ),
+  	'id' => 'k911_footer_menu_left',
+  	'description' => __( 'Footer Widget Area' , 'K911_Theme' ),
   	'before_widget' => '',
   	'after_widget'  => '',
-  	'before_title' => '',
-  	'after_title' => ''
+  	'before_title' => '<div class="alert alert-secondary p-1"><h3><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
+  	'after_title' => '</h3></div>'
 ));

@@ -1,4 +1,4 @@
-			<div class="col-md card-deck mb-4">
+			<div class="col-lg card-deck mb-4">
 				<div class="card box-shadow">
 					<div class="card-header" style="background: #f3ec1a;">
 						<strong class="text-uppercase"><i class="fas fa-ambulance mr-2"></i>Emergency Transport:</strong>
@@ -14,7 +14,7 @@
     					</div>
 				</div>
 			</div>
-			<div class="col-md card-deck mb-4">
+			<div class="col-lg card-deck mb-4">
 				<div class="card box-shadow">
 					<div class="card-header" style="background: #f3ec1a;">
 						<strong class="text-uppercase"><i class="fas fa-bus mr-2"></i>Basic Transport:</strong>
@@ -28,7 +28,7 @@
     					</div>
 				</div>
 			</div>
-			<div class="col-md card-deck mb-4">
+			<div class="col-lg card-deck mb-4">
 				<div class="card box-shadow">
 					<div class="card-header" style="background: #f3ec1a;">
 						<strong class="text-uppercase"><i class="far fa-heart mr-2"></i>Deceased Pet Transport:</strong>
