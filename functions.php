@@ -79,6 +79,6 @@ register_sidebar(array(
   	'description' => __( 'Footer Widget Area' , 'K911_Theme' ),
   	'before_widget' => '',
   	'after_widget'  => '',
-  	'before_title' => '<div class="alert alert-secondary p-1"><h3><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
-  	'after_title' => '</h3></div>'
+  	'before_title' => '<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
+  	'after_title' => '</h3>'
 ));
