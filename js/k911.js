@@ -29,7 +29,6 @@ var $ = jQuery.noConflict();
     // Bind event listener
     $(window).resize(checkWidth);	
 	});
-	//end ready
 
 
 	
