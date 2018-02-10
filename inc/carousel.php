@@ -53,12 +53,4 @@
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#k911Carousel" role="button" data-slide="prev">
-    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous Image</span>
-    </a>
-    <a class="carousel-control-next text-shadow" href="#k911Carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next Image</span>
-    </a>
 </div>
