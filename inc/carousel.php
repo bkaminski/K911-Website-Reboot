@@ -1,4 +1,4 @@
-<div id="k911Carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+<div id="k911Carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
 	<ol class="carousel-indicators">
     	<li data-target="#k911Carousel" data-slide-to="0" class="active"></li>
         <li data-target="#k911Carousel" data-slide-to="1"></li>
