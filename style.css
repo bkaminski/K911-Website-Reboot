@@ -420,7 +420,7 @@ a img.aligncenter
     top: 0;
     right: 0;
 
-    margin-top: 25.5px;
+    margin-top: 26px;
     margin-right: 85px;
 
     animation-name: color;
@@ -460,6 +460,14 @@ a img.aligncenter
     padding-top: 15px;
 
     background: #f3ec1a;
+}
+.header-fluid
+{
+    font-size: 7.5vw;
+}
+.phone-badge
+{
+    font-size: 5.5vw;
 }
 /* ========================= End Custom Styles ========================= */
 
@@ -513,6 +521,14 @@ a img.aligncenter
     .btn-help
     {
         display: none;
+    }
+    .header-fluid
+    {
+        font-size: 3.0vw;
+    }
+    .phone-badge
+    {
+        font-size: 2.5vw;
     }
 }
 
