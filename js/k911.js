@@ -18,10 +18,10 @@ var $ = jQuery.noConflict();
         //Different from Bootstrap's 768px but working and tested
         function checkWidth() {
         if ($window.width() < 750) {
-            $('footer').removeClass('k911-footer').addClass('k911-footer-mobile');
+            
         };
         if ($window.width() >= 750) {
-            $('footer').removeClass('k911-footer-mobile').addClass('k911-footer');
+            
         }
     }
     // Execute on load
