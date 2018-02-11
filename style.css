@@ -349,7 +349,8 @@ a img.aligncenter
 .k911-footer
 {
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
+    padding-bottom: 2px;
 
     border-top: 6px solid #f3ec1a;
     background: #000;

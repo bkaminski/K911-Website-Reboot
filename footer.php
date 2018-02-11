@@ -1,4 +1,4 @@
- <footer class="k911-footer pb-3">
+ <footer class="k911-footer">
  	<div class="container-fluid right-footer">
  		<div class="row">
 	 		<div class="col-md text-white pt-3">
@@ -20,9 +20,7 @@
 	 			</form>
 	 		</div>
 		</div>
-		<div class="col-md">
-			<p class="text-white text-right pt-4"><small>Copyright &copy; <?php echo date(Y); ?> K911</small></p>
-		</div>
+		<p class="text-white text-right pt-4"><small>Copyright &copy; <?php echo date(Y); ?> K911</small></p>
  	</div>
  </footer>
  <?php wp_footer(); ?>
