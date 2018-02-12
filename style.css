@@ -393,6 +393,13 @@ a img.aligncenter
 {
     font-size: 7vw;
 }
+.k911-social
+{
+    min-height: 200px;
+
+    border-top: 6px solid #f3ec1a;
+    background: #d3d4d9;
+}
 /* Pulsating CSS background */
 .help-button
 {
@@ -457,6 +464,7 @@ a img.aligncenter
 {
     font-size: 5.5vw;
 }
+
 /* ========================= End Custom Styles ========================= */
 
 

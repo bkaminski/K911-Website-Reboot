@@ -7,7 +7,6 @@ function enqueue_k911_scripts()
     wp_enqueue_script('Bootstrap-4x', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', false, null, true, null);
     wp_enqueue_script('k911-scripts', get_template_directory_uri() . '/js/k911.js', array('jquery'), null, true, null);
-    
 }
 add_action('wp_enqueue_scripts', 'enqueue_k911_scripts');
 
@@ -26,10 +25,10 @@ show_admin_bar(false);
 add_theme_support('post-thumbnails');
 
 //Allow RSS Feeds
-add_theme_support( 'automatic-feed-links' );
+add_theme_support('automatic-feed-links');
 
 //Allow post formats
-add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video'));
 
 // add tag support to pages
 function tags_support_all() {
@@ -82,3 +81,23 @@ register_sidebar(array(
   	'before_title' => '<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
   	'after_title' => '</h3>'
 ));
+
+//Change WP Emails and email address away from "WordPress" as sender
+function k911_mail_name( $email ){
+  return 'K911'; // new email name from sender.
+}
+add_filter( 'wp_mail_from_name', 'k911_mail_name' );
+
+function k911_mail_from ($email ){
+  return 'k911de@gmail.com'; // new email address from sender.
+}
+add_filter( 'wp_mail_from', 'k911_mail_from' );
+
+//begin blog page read more button
+function excerpt_read_more_link($output)
+{
+    global $post;
+    return $output . '<a class="btn btn-lg btn-info btn-rounded text-uppercase" href="'. get_permalink() . '">Read More <i class="fas fa-angle-double-right fa-fw fa-lg"></i></a>';
+}
+add_filter('the_excerpt', 'excerpt_read_more_link');
+//end blog page read more button

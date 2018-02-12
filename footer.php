@@ -9,12 +9,14 @@
 	 			<form>
 	 				<div class="form-group">
     					<label for="k911LoginEmail" class="text-white">Subscribe to the K911 Email list:</label>
-    					<div class="input-group">
-    						<div class="input-group-prepend">
-          						<div class="input-group-text"><i class="far fa-envelope fa-fw fa-lg"></i></div>
-        					</div>
-    							<input type="email" class="form-control form-control-lg" id="k911LoginEmail" aria-describedby="emailHelp" placeholder="Enter email" required="required">
-    					</div>
+	    					<div class="input-group">
+	    						<div class="input-group-prepend">
+	          						<div class="input-group-text">
+	          							<i class="far fa-envelope fa-fw fa-lg"></i>
+	          						</div>
+	        					</div>
+	    						<input type="email" class="form-control form-control-lg" id="k911LoginEmail" aria-describedby="emailHelp" placeholder="Enter email" required="required">
+	    					</div>
   					</div>	
   					<button type="submit" class="btn btn-success btn-rounded pr-5 pl-5 text-uppercase">Subscribe</button>
 	 			</form>

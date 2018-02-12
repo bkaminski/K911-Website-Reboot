@@ -50,5 +50,16 @@
 			</div>
 		</div>
 	</section>
+	<section class="k911-social">
+		<div class="container pb-5 pt-5">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="text-center"><i class="far fa-newspaper fa-5x" style="color: #4b88a2;"></i></p>
+					<h2 class="display-4 text-center mb-4">Latest News:</h2>
+				</div>
+				<?php include get_template_directory() . '/inc/home-news.php'; ?>
+			</div>
+		</div>
+	</section>
 	<?php include get_template_directory() . '/inc/emergency-modal.php'; ?>
 <?php get_footer(); ?>

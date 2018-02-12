@@ -20,7 +20,10 @@
 						</div>
 						<div class="mt-4 k911-main">
 
+							<!-- Call in featured image -->
+							<?php the_post_thumbnail('full'); ?>
 
+							
 							<!-- all content typed in WordPress Page editor -->
 							<?php the_content(); ?>
 
@@ -31,7 +34,7 @@
 					
 
 					<!-- post and page tags -->
-					<?php the_tags('<h6>Related Topics:</h6> '); ?>
+					<?php the_tags('Related Topics: '); ?>
 
 
 				</div>
