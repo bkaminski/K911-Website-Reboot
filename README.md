@@ -22,4 +22,5 @@
 <li>jQuery Ver. 1.12.4</li>
 <li>FontAwesome Ver. 5.0.6</li>
 <li>Ajax Popper JS</li>
+<li>JS Cookie</li>
 </ul>
