@@ -2,6 +2,11 @@
 <p>Design a Custom Wordpress Theme for K911 Animal Transport Service</p>
 <p>The objective of this project is to renew and revive a website that was designed using a "Website Builder" software package on a hosting service. A snapshot of the current/to be replaced website can be seen below:</p>
 
+<h2>Preface:</h2>
+<p>While I have been making custom WordPress themes for many years now, this is my first <u>public</u> GNU/GPL release that I am fully tracking here. While this WordPress Theme -- when complete -- will be available for any and all to download and use, keep in mind that this build is custom to client spec. You will find a lot of client specific taxonomy and features. You could always create a child theme if you would like to use the base foundation and build on top.
+
+All I ask in return is to be notified when and if you decide to use this theme upon completion/release. I'm just interested to see what is done with it, no other reasons really lol. I look forward to any and all constructive criticizm, ideas and code review.</p>
+
 <h3>Current Website Snapshot</h3>
 <p><a href="https://web.archive.org/web/20170929060439/http://www.k911online.com/">Available Here</a></p>
 
