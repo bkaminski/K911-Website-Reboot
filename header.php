@@ -29,9 +29,9 @@
 		    	<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 		      		<img src="<?php echo get_template_directory_uri(); ?>/media/apple-icon-76x76.png" alt="K911 Transport Service Logo">
 		      	</a>
-		      	<button class="btn btn-danger btn-help" type="button">
+		      	<a href="tel:1-302-746-6006" class="btn btn-danger btn-help" type="button">
 		        	<i class="fas fa-exclamation-triangle fa-2x pt-1 pb-1"></i>
-		      	</button>
+		      	</a>
 		      	<button class="navbar-toggler fa-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		        	<i class="fas fa-align-justify fa-fw fa-lg"></i>
 		      	</button>
@@ -49,7 +49,7 @@
 				        );
 			        ?>
 			        <form class="form-inline my-2 my-lg-0">
-			          <button class="btn btn-danger btn-lg my-2 my-sm-0 d-none d-lg-block text-uppercase btn-rounded mr-3 help-button" type="submit">Get Help Now</button>
+			          <a href="tel:1-302-746-6006" class="btn btn-danger btn-lg my-2 my-sm-0 d-none d-lg-block text-uppercase btn-rounded mr-3 help-button">Get Help Now</a>
 			        </form>
 		      	</div>
 		    </nav>

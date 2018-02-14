@@ -10,7 +10,7 @@
 					      	</p>
 					    </div>
 					    <div class="card-footer k911-card-footer">
-      						<button class="btn btn-success btn-block btn-rounded box-shadow">Call Now</button>
+      						<a href="tel:1-302-746-6006" class="btn btn-success btn-block btn-rounded box-shadow">Call Now</a>
     					</div>
 				</div>
 			</div>
@@ -24,7 +24,7 @@
 					      	<p class="card-text">Our special transport vehicles are equipped for your pets’ safe travel. A padded stretcher is available for large dogs unable to move or stand. Our friendly and compassionate staff are committed to making your trip to the vet, animal hospital, groomer, daycare, airport,etc. less stressful. Call us today for a quote or to book a pet transport.</p>
 				   		</div>
 				   		<div class="card-footer k911-card-footer">
-      						<button class="btn btn-success btn-block btn-rounded box-shadow">Call Now</button>
+      						<a href="tel:1-302-746-6006" class="btn btn-success btn-block btn-rounded box-shadow">Call Now</a>
     					</div>
 				</div>
 			</div>

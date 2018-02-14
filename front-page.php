@@ -7,7 +7,7 @@
 					<p class="text-center">We are <strong>K911</strong>, your compassionate, reliable, 24 hour <u>emergency</u> and <u>non-emergency</u> animal transport company.</p>
 					<img class="img-fluid mx-auto d-block mb-2" height="200" width="200" src="<?php echo get_template_directory_uri(); ?>/media/k911-web-logo.png" alt="K911 Logo" />
 					<p class="text-center">Our team is dedicated to the safety, health, comfort, and security of your pet.</p>
-					<p class="text-center"><a href="#" class="badge badge-success phone-badge">302.746.6006</a></p>
+					<p class="text-center"><a href="tel:1-302-746-6006" class="badge badge-success phone-badge">302.746.6006</a></p>
 				</div>
 				<div class="col-lg-8 p-0 k911-carousel">
 					<?php include get_template_directory() . '/inc/carousel.php'; ?>
@@ -22,10 +22,14 @@
   			<div class="container">
   				<div class="row">
   					<div class="col-md-6">
-  						<button class="btn btn-block btn-success btn-rounded btn-lg text-uppercase mb-3 box-shadow"><i class="fas fa-mobile-alt fa-fw mr-2"></i><strong>Call Us</strong></button>
+  						<a class="btn btn-block btn-success btn-rounded btn-lg text-uppercase mb-3 box-shadow" href="tel:1-302-746-6006">
+  							<i class="fas fa-mobile-alt fa-fw mr-2"></i><strong>Call Us</strong>
+  						</a>
   					</div>
   					<div class="col-md-6">
-  						<button class="btn btn-block btn-success btn-rounded btn-lg text-uppercase box-shadow"><strong><i class="far fa-envelope fa-fw mr-2"></i>Email Us</strong></button>
+  						<a class="btn btn-block btn-success btn-rounded btn-lg text-white text-uppercase box-shadow">
+  							<i class="far fa-envelope fa-fw mr-2"></i><strong>Email Us</strong>
+  						</a>
   					</div>
   				</div>
   				<br />
