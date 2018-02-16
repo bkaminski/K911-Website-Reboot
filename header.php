@@ -49,6 +49,7 @@
 			        ?>
 			        <form class="form-inline my-2 my-lg-0">
 			          <a href="tel:1-302-746-6006" class="btn btn-lg d-none d-lg-block text-uppercase btn-rounded mr-3 help-button" type="button">Get Help Now</a>
+			          <a href="tel:1-302-746-6006" class="btn btn-danger btn-lg my-2 my-sm-0 d-none d-lg-block text-uppercase btn-rounded mr-3 help-button">Get Help Now</a>
 			        </form>
 		      	</div>
 		    </nav>
