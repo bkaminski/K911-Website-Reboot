@@ -31,7 +31,7 @@
 					
 
 					<!-- post and page tags -->
-					<?php the_tags('Related Topics: '); ?>
+					<?php the_tags('Related Topics: ' , '&nbsp;', ''); ?>
 
 
 				</div>
