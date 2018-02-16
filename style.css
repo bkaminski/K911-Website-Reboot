@@ -401,13 +401,14 @@ a img.aligncenter
     background: #d3d4d9;
 }
 /* Pulsating CSS background */
-.help-button
+a.help-button
 {
     animation-name: color;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; 
 
     background-color: #dc3545;
+    color: #fff;
 }
 .btn-help
 {
@@ -421,7 +422,7 @@ a img.aligncenter
     animation-name: color;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-
+	
     border: 2px solid #f9fcfa;
     background-color: #dc3545;
 }

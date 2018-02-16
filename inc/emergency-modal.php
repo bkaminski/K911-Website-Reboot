@@ -6,7 +6,7 @@
 	        	<h3 class="modal-title emergency-modal-title" id="k911EmergencyLabel"><i class="fa fa-ambulance fa-lg" aria-hidden="true"></i> Is Your Pet in Danger?</h3>
 	      	</div>
 	      	<div class="modal-body text-center">
-	       		<button class="btn btn-outline-danger btn-rounded btn-lg pl-5 pr-5 mt-5 mb-5 text-uppercase"><i class="fa fa-mobile fa-lg mr-2" aria-hidden="true"></i><strong>Get Help Now</strong></button>
+	       		<a class="btn btn-danger btn-rounded btn-lg pl-5 pr-5 mt-5 mb-5 text-uppercase" href="tel:1-302-746-6006"><i class="fas fa-mobile-alt fa-fw mr-2"></i><strong>Get Help Now</strong></a>
 	      	</div>
 	      	<div class="modal-footer emergency-modal-footer mt-2">
 	        	<button type="button" class="btn btn-info text-white" data-dismiss="modal">No, Continue to Website</button>

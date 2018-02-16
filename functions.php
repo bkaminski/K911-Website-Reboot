@@ -7,6 +7,8 @@ function enqueue_k911_scripts()
     wp_enqueue_script('Bootstrap-4x', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', false, null, true, null);
     wp_enqueue_script('k911-scripts', get_template_directory_uri() . '/js/k911.js', array('jquery'), null, true, null);
+    wp_enqueue_script('cookie-js', get_template_directory_uri() . '/js/cookie.min.js', false, null, true, null);
+
 }
 add_action('wp_enqueue_scripts', 'enqueue_k911_scripts');
 
@@ -101,3 +103,57 @@ function excerpt_read_more_link($output)
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button
+
+//begin pagination
+function k911_pagination($pages = '', $range = 1) {
+     $showitems = ($range * 2)+1;
+
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '') {
+         global $wp_query;
+         $pages = $wp_query->max_num_pages;
+         if(!$pages) {
+             $pages = 1;
+         }
+     }
+
+     if(1 != $pages) {
+         echo "<nav aria-label='Blog Navigation pagination'>";
+            echo "<ul class='pagination justify-content-center'>";
+            echo "<li class='page-item'>";
+                if($paged > 2 && $paged > $range+1 && $showitems < $pages) 
+                  echo "<a class='page-link' aria-label='First Page' href='".get_pagenum_link(1)."'>
+                          <i class='fa fa-angle-double-left fa-lg' aria-hidden='true'></i>
+                          <span class='sr-only'>go to first page</span>
+                      </a>"
+            ;
+            echo "</li>";
+            echo "<li class='page-item'>";
+                if($paged > 1 && $showitems < $pages) 
+                  echo "<a class='page-link' href='".get_pagenum_link($paged - 1)."'>
+                          <i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>
+                          <span class='sr-only'>go to previous page</span>
+                      </a>"
+            ;
+            echo "</li>";
+            for ($i=1; $i <= $pages; $i++) {
+                if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
+                    echo ($paged == $i)? "<li class='page-link'>".$i."</li>":"<a href='".get_pagenum_link($i)."' class='page-link' >".$i."</a>"
+                ;}}
+                if ($paged < $pages && $showitems < $pages) 
+                  echo "<a class='page-link' aria-label='Next Page' href='".get_pagenum_link($paged + 1)."'>
+                          <i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>
+                          <span class='sr-only'>go to next page</span>
+                        </a>";
+                if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) 
+                  echo "<a class='page-link' aria-label='Last Page' href='".get_pagenum_link($pages)."'>
+                          <i class='fa fa-angle-double-right fa-lg' aria-hidden='true'></i>
+                          <span class='sr-only'>go to last page</span>
+                        </a>";
+            global $wp_query;
+              echo "</ul></nav>";
+          }
+}
+//end pagination

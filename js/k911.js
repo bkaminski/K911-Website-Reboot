@@ -2,8 +2,19 @@ var $ = jQuery.noConflict();
 
 	//ready func's
 	$(document).ready(function() {
-		
-		//$('#k911Emergency').modal('show');
+
+
+		// Set modal cookies to only fire once on home page
+		if (!Cookies.get('popup')) {
+				setTimeout(function() {
+						$('#k911Emergency').modal();
+				}, 600);
+		}
+		$('#k911Emergency').on('shown.bs.modal', function () {
+				// bootstrap modal callback function
+				// set cookie
+				Cookies.set('popup', 'valid', { expires: 3, path: "/" }); // need to set the path to fix a FF bug
+		})
 
 		//Add Bootstrap 4 Classes to Navigation
 		$("#menu-k911-menu").find('.menu-item').addClass('nav-item');
@@ -15,11 +26,16 @@ var $ = jQuery.noConflict();
 		//Add Image Class to Featured image on Home Page
 		$("#featImg").find('img').addClass('img-thumbnail');
 
-		// Swap alignment at mobile
-    	var $window = $(window);
-        // Function to handle changes to style classes based on window width
-        //Different from Bootstrap's 768px but working and tested
-        function checkWidth() {
+		
+
+	//End Ready	
+	});
+
+// Swap alignment at mobile
+var $window = $(window);
+     // Function to handle changes to style classes based on window width
+     //Different from Bootstrap's 768px but working and tested
+     function checkWidth() {
         if ($window.width() < 750) {
             
         };
@@ -30,9 +46,6 @@ var $ = jQuery.noConflict();
     // Execute on load
     checkWidth();
     // Bind event listener
-    $(window).resize(checkWidth);	
-	});
-
-
+$(window).resize(checkWidth);	
 	
 
