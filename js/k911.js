@@ -21,12 +21,12 @@ var $ = jQuery.noConflict();
 		$("#menu-k911-menu").find('a').addClass('nav-link mr-4');
 
 		//Add Styles to WordPress Tags
-		$("#k911Tags").find('a').addClass('badge badge-pill badge-success pb-2 mt-1');
+		$("#k911Tags").find('a').addClass('badge badge-pill badge-success pt-0');
 
 		//Add Image Class to Featured image on Home Page
 		$("#featImg").find('img').addClass('img-thumbnail');
 
-		
+
 
 	//End Ready	
 	});

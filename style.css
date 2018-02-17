@@ -401,7 +401,7 @@ a img.aligncenter
     background: #d3d4d9;
 }
 /* Pulsating CSS background */
-a.help-button
+.help-button
 {
     animation-name: color;
     animation-duration: 2s;
@@ -409,6 +409,7 @@ a.help-button
 
     background-color: #dc3545;
     color: #fff;
+
 }
 .btn-help
 {
