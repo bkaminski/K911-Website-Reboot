@@ -405,11 +405,10 @@ a img.aligncenter
 {
     animation-name: color;
     animation-duration: 2s;
-    animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
 
-    background-color: #dc3545;
     color: #fff;
-
+    background-color: #dc3545;
 }
 .btn-help
 {
@@ -423,7 +422,7 @@ a img.aligncenter
     animation-name: color;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-	
+
     border: 2px solid #f9fcfa;
     background-color: #dc3545;
 }
