@@ -29,3 +29,6 @@ All I ask in return is to be notified when and if you decide to use this theme u
 <li>Ajax Popper JS</li>
 <li>JS Cookie</li>
 </ul>
+
+<h3>Phase 2: Client Review</h3>
+<p>The WordPress theme has been designed pending client review. The WordPress theme now resides on a QAT server for client access to review and request changes. Client is currently reviewing website for integrity, design, ease of use, and will most likely come back with change requests. All change requests made by client will be included in phase 2.</p>
