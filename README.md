@@ -32,3 +32,9 @@ All I ask in return is to be notified when and if you decide to use this theme u
 
 <h3>Phase 2: Client Review</h3>
 <p>The WordPress theme has been designed pending client review. The WordPress theme now resides on a QAT server for client access to review and request changes. Client is currently reviewing website for integrity, design, ease of use, and will most likely come back with change requests. All change requests made by client will be included in phase 2.</p>
+
+<h3>Phase 3: Apply Client Edits and WordPress Theme Customizer Functions</h3>
+<p>After the client has reviewed the site and made their change requests, I will ask them what areas (that they currently can not edit) that they would like the ability to edit. For example, the slide images in the Bootstrap carousel. I will be building a Theme Customizer function to allow for quick updating of the images, headline text, and paragraph text as well as image "alt" text and link to page. Any and all changes and theme customizer functions will take place in this phase.</p>
+
+<h3>Phase 4: Soft Launch of Website</h3>
+<p>The "soft" launch is an unannounced launch of a new website in an effort to get feedback from users. It also allows for more UAT testing and debugging. Once all is agreed upon after soft launch, a hard launch of the website will follow and complete the project.</p>
