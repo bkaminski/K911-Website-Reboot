@@ -266,10 +266,6 @@ a img.aligncenter
 
 /* ========================= End Globals ========================= */
 
-/* ========================= Begin Navbar Styles ========================= */
-
-/* ========================= End Navbar Styles ========================= */
-
 /* ========================= Custom Styles ========================= */
 .btn-rounded
 {
@@ -407,6 +403,7 @@ a img.aligncenter
     animation-duration: 2s;
     animation-iteration-count: infinite;
 
+    color: #fff;
     background-color: #dc3545;
 }
 .btn-help
@@ -422,7 +419,12 @@ a img.aligncenter
     animation-duration: 2s;
     animation-iteration-count: infinite;
 
-    border: 2px solid #f9fcfa;
+    border: 2px solid #f9fcfa !important;
+    border-color: #d3d4d9 !important;
+    border-top-color: rgb(249, 252, 250);
+    border-right-color: rgb(249, 252, 250);
+    border-bottom-color: rgb(249, 252, 250);
+    border-left-color: rgb(249, 252, 250);
     background-color: #dc3545;
 }
 
