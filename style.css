@@ -24,27 +24,8 @@ a
 
     outline: none;
 }
-/* ========================= Mime Types for File Extensions ========================= */
-a[href$='.pdf']::after
-{
-    font-family: 'fontawesome';
-    font-weight: 400;
+/* ========================= End Globals ========================= */
 
-    content: '\0020\f1c1';
-
-    color: inherit;
-}
-
-a[href$='.docx']::after
-{
-    font-family: 'fontawesome';
-    font-weight: 400;
-
-    content: '\0020\f1c2';
-
-    color: inherit;
-}
-/* ========================= End Mime Types ========================= */
 
 /* ========================= WordPress Image Classes ========================= */
 
@@ -148,6 +129,21 @@ a img.aligncenter
     padding: 0 4px 5px;
 }
 /* ========================= End WordPress Image Classes ========================= */
+
+/*  ========================= WP Plugin Overrides  ========================= */
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing
+{
+    border: 2px solid #000;
+    background: #dc3545;
+    color: #f9fcfa;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*  ========================= End WP Plugin Overrides  ========================= */
+
 
 /* ========================= Bootstrap overrides ========================= */
 .carousel
@@ -265,8 +261,6 @@ a img.aligncenter
     background: #f9fcfa;
 }
 /* ========================= End Bootstrap overrides ========================= */
-
-/* ========================= End Globals ========================= */
 
 /* ========================= Custom Styles ========================= */
 .btn-rounded
@@ -472,7 +466,6 @@ a img.aligncenter
 /* ========================= End Custom Styles ========================= */
 
 
-
 /* ========================= Media Queries ========================= */
 
 /* Small devices (landscape phones, 576px and up) */
@@ -532,7 +525,7 @@ a img.aligncenter
     }
     .dropdown-menu .nav-link:hover
     {
-        margin-left: 0px;
+        margin-left: 0;
         padding-left: 10px;
     }
 }
