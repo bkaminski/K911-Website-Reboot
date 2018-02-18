@@ -27,7 +27,7 @@
   						</a>
   					</div>
   					<div class="col-md-6">
-  						<a class="btn btn-block btn-success btn-rounded btn-lg text-white text-uppercase box-shadow">
+  						<a href="mailto:k911de@gmail.com" class="btn btn-block btn-success btn-rounded btn-lg text-white text-uppercase box-shadow">
   							<i class="far fa-envelope fa-fw mr-2"></i><strong>Email Us</strong>
   						</a>
   					</div>

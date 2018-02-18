@@ -5,7 +5,7 @@
 <h2>Preface:</h2>
 <p>While I have been making custom WordPress themes for many years now, this is my first <u>public</u> GNU/GPL release that I am fully tracking here. While this WordPress Theme -- when complete -- will be available for any and all to download and use, keep in mind that this build is custom to client spec. You will find a lot of client specific taxonomy and features. You could always create a child theme if you would like to use the base foundation and build on top.
 
-All I ask in return is to be notified when and if you decide to use this theme upon completion/release. I'm just interested to see what is done with it, no other reasons really lol. I look forward to any and all constructive criticizm, ideas and code review.</p>
+All I ask in return is to be notified when and if you decide to use this theme upon completion/release. I'm just interested to see what is done with it, no other reasons really lol. I look forward to any and all constructive criticism, ideas and code review.</p>
 
 <h3>Current Website Snapshot</h3>
 <p><a href="https://web.archive.org/web/20170929060439/http://www.k911online.com/">Available Here</a></p>
@@ -29,3 +29,12 @@ All I ask in return is to be notified when and if you decide to use this theme u
 <li>Ajax Popper JS</li>
 <li>JS Cookie</li>
 </ul>
+
+<h3>Phase 2: Client Review</h3>
+<p>The WordPress theme has been designed pending client review. The WordPress theme now resides on a QAT server for client access to review and request changes. Client is currently reviewing website for integrity, design, ease of use, and will most likely come back with change requests. All change requests made by client will be included in phase 2.</p>
+
+<h3>Phase 3: Apply Client Edits and WordPress Theme Customizer Functions</h3>
+<p>After the client has reviewed the site and made their change requests, I will ask them what areas (that they currently can not edit) that they would like the ability to edit. For example, the slide images in the Bootstrap carousel. I will be building a Theme Customizer function to allow for quick updating of the images, headline text, and paragraph text as well as image "alt" text and link to page. Any and all changes and theme customizer functions will take place in this phase.</p>
+
+<h3>Phase 4: Soft Launch of Website</h3>
+<p>The "soft" launch is an unannounced launch of a new website in an effort to get feedback from users. It also allows for more UAT testing and debugging. Once all is agreed upon after soft launch, a hard launch of the website will follow and complete the project.</p>

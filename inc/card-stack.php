@@ -41,6 +41,7 @@
 					    </div>
 					    <div class="card-footer k911-card-footer">
       						<a href="/contact-k911/" class="btn btn-success btn-block btn-rounded box-shadow">Contact Us</a>
+      						<a href="/k911/contact-k911/" class="btn btn-success btn-block btn-rounded box-shadow">Contact Us</a>
     					</div>
 				</div>
 			</div>
