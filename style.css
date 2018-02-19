@@ -152,7 +152,7 @@ div.wpcf7-validation-errors
 }
 .ngg-gallery-thumbnail
 {
-    border: 0 solid !important;
+    border: 0 !important;
 }
 
 /*  ========================= End WP Plugin Overrides  ========================= */
