@@ -8,6 +8,10 @@
 						</div>
 						<div class="mt-4 k911-main">
 							<div class="row">
+
+
+								<!-- start WordPress Loop -->
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 								<div class="col-md-3 pt-3">
 
 
@@ -25,11 +29,6 @@
 								<div class="col-md-9">
 
 
-									<!-- start WordPress Loop -->
-									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-								
-
-
 										<!-- call in article title -->
 										<h1><a href='<?php the_permalink() ?>'rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h1>
 										<span class="badge badge-success">Date Posted: <?php the_time('m-d-Y') ?></span>
@@ -38,15 +37,20 @@
 										<!-- all content typed in WordPress Page editor -->
 										<?php the_excerpt(); ?>
 										<hr>
-
-
-
-										<!-- end WordPress Loop -->
-										<?php endwhile; else : ?>
-											<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
-										<?php endif; ?>
+										
 
 								</div>	
+
+
+
+								<!-- end WordPress Loop -->
+								<?php endwhile; else : ?>
+									<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
+								<?php endif; ?>
+
+
+
+
 							</div>
 						</div>
 
