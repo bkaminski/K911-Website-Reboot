@@ -15,15 +15,22 @@
 								<!-- title entered in WordPress page editor -->
 								<?php the_title(); ?>
 
-
 							</h1>
 						</div>
 						<div class="mt-4 k911-main">
+							
+
+							<!-- Call in published on date and author name -->
+							<p>Published on: <?php the_date(); ?> by <?php the_author(); ?></p>
+
 
 							<!-- Call in featured image -->
 							<?php the_post_thumbnail('full'); ?>
+							<br />
+							<br />
 
-							
+
+
 							<!-- all content typed in WordPress Page editor -->
 							<?php the_content(); ?>
 
@@ -31,8 +38,7 @@
 						</div>
 				</div>
 				<div id="k911Tags" class="col-lg-12 k911-tags">
-					
-
+			
 					<!-- post and page tags -->
 					<?php the_tags('Related Topics: ' , '&nbsp;', ''); ?>
 
