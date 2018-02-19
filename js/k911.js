@@ -27,7 +27,7 @@ var $ = jQuery.noConflict();
 		$("#featImg").find('img').addClass('img-thumbnail');
 
 		//Align NGG Images
-		$(".ngg-gallery-thumbnail").find('img').addClass('mx-auto d-block');
+		$(".ngg-gallery-thumbnail").find('img').addClass('mx-auto d-block img-thumbnail');
 
 
 
