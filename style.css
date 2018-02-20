@@ -154,6 +154,20 @@ div.wpcf7-validation-errors
 {
     border: 0 !important;
 }
+div.wpcf7 .ajax-loader
+{
+    display: inline-block;
+    visibility: hidden;
+
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    margin-left: 45%;
+    margin-top: 20px;
+
+    border: none;
+    background-image: none !important;
+}
 
 /*  ========================= End WP Plugin Overrides  ========================= */
 
