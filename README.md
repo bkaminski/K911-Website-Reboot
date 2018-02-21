@@ -20,14 +20,14 @@ All I ask in return is to be notified when and if you decide to use this theme u
 <p>The final product will be a fully functional CMS using WordPress that will allow for easy client updating and app-like design on mobile phones with a focus on those in emergent situations that need to take action immediately.</p>
 
 <h4>Dependencies:</h4>
-<p>All current dependencies being called in via functions.php and CDN. No local storage of libs.</p>
+<p>Most dependencies being called in via functions.php and CDN.</p>
 <ul>
 <li>WordPress 4.9.x</li>
 <li>Bootstrap 4.0.0</li>
 <li>jQuery Ver. 1.12.4</li>
 <li>FontAwesome Ver. 5.0.6</li>
 <li>Ajax Popper JS</li>
-<li>JS Cookie</li>
+<li>JS Cookie (local/included in build)</li>
 </ul>
 
 <h3>Phase 2: Client Review</h3>
