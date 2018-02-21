@@ -57,9 +57,9 @@ register_nav_menus( array(
 ) );
 // Nav Walker
 
-//Wordpress Fluid Images Bootstrap 4.0.0-alpha.6
+//Wordpress Fluid Images Bootstrap 4.0.0
 function bootstrap_fluid_images( $html ){
-  $classes = 'img-fluid'; // Bootstrap 4.0.0-alpha.6
+  $classes = 'img-fluid'; // Bootstrap 4.0.0
   // check if there are already classes assigned to the anchor
   if ( preg_match('/<img.*? class="/', $html) ) {
     $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . '$2', $html);
@@ -103,6 +103,7 @@ function excerpt_read_more_link($output)
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button
+
 
 //begin pagination
 function k911_pagination($pages = '', $range = 1) {

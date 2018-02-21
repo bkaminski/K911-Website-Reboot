@@ -1,56 +1,55 @@
+<!-- Bootstrap 4 Carousel with WordPress Loop -->
+<?php
+$args = array(
+	'post_type' => 'post',
+	'category_name' => 'k911-news'
+);
+$the_query = new WP_Query ( $args ); 
+?>
+
+
 <div id="k911Carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
 	<ol class="carousel-indicators">
-    	<li data-target="#k911Carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#k911Carousel" data-slide-to="1"></li>
-        <li data-target="#k911Carousel" data-slide-to="2"></li>
-        <li data-target="#k911Carousel" data-slide-to="3"></li>
-        <li data-target="#k911Carousel" data-slide-to="4"></li>
+
+
+    	<!-- Start WP Loop -->
+		<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		<li data-target="#k911Carousel" data-slide-to="<?php echo $the_query->current_post; ?>" class="<?php if ( $the_query->current_post == 0 ) : ?>active<?php endif; ?>"></li>
+		<?php endwhile; endif; ?>
+
+
     </ol>
-    <div class="carousel-inner">
-    	<div class="carousel-item active">
-        	<img class="img-fluid k911-carousel-img" src="<?php echo get_template_directory_uri(); ?>/media/cat001.png" alt="First slide">
-            <div class="container">
-            	<div class="carousel-caption text-left">
-                	<h1 class="text-shadow k911-carousel-title">Example headline One.</h1>
-                	<p class="text-shadow d-none d-sm-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              	</div>
-            </div>
-        </div>
-        <div class="carousel-item">
-        	<img class="img-fluid k911-carousel-img" src="<?php echo get_template_directory_uri(); ?>/media/dog001.png" alt="Second slide">
-            <div class="container">
-            	<div class="carousel-caption text-left">
-                	<h1 class="text-shadow k911-carousel-title">Example Headline Two.</h1>
-                	<p class="text-shadow d-none d-sm-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              	</div>
-            </div>
-        </div>
-        <div class="carousel-item">
-        	<img class="img-fluid k911-carousel-img" src="<?php echo get_template_directory_uri(); ?>/media/cat002.png" alt="Third slide">
-            <div class="container">
-            	<div class="carousel-caption text-left">
-                	<h1 class="text-shadow k911-carousel-title">Example Headline Three.</h1>
-                	<p class="text-shadow d-none d-sm-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              	</div>
-            </div>
-        </div>
-        <div class="carousel-item">
-        	<img class="img-fluid k911-carousel-img" src="<?php echo get_template_directory_uri(); ?>/media/bird001.png" alt="Fourth slide">
-            <div class="container">
-            	<div class="carousel-caption text-left">
-                	<h1 class="text-shadow k911-carousel-title">Example Headline Four.</h1>
-                	<p class="text-shadow d-none d-sm-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              	</div>
-            </div>
-        </div>
-        <div class="carousel-item">
-        	<img class="img-fluid k911-carousel-img" src="<?php echo get_template_directory_uri(); ?>/media/dog002.png" alt="Fifth Slide">
-            <div class="container">
-            	<div class="carousel-caption text-left">
-                	<h1 class="text-shadow k911-carousel-title">Example Headline Five.</h1>
-                	<p class="text-shadow d-none d-sm-block">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              	</div>
-            </div>
-        </div>
+
+	<?php rewind_posts(); ?>
+
+
+    <div class="carousel-inner"> 	
+		
+
+		<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+	          $thumbnail_id   = get_post_thumbnail_id();
+	          $thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id, 'full', true );
+	          $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attatchment_image_alt', true );
+	    ?>
+
+
+    	<div class="carousel-item <?php if ( $the_query->current_post == 0 ) : ?>active<?php endif; ?>">
+    		
+    		<?php if ( has_post_thumbnail() ) : ?>
+    			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+    				<?php the_post_thumbnail('full'); ?>
+			</a>
+			<?php endif; ?>
+
+
+	    	<div class="container">
+	    		<div class="carousel-caption text-left">
+	    			<h1 class="text-shadow k911-carousel-title"><?php the_title(); ?></h1>
+	    			<span id="carouselExcerpt" class="text-shadow d-none d-sm-block"><?php the_excerpt(); ?></span>
+	    		</div>
+	    	</div>
+
+    	</div>
+		<?php endwhile;	endif; ?>
     </div>
 </div>
