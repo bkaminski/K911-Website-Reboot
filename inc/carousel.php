@@ -19,6 +19,7 @@ $the_query = new WP_Query ( $args );
 
 
     </ol>
+    
 
 	<?php rewind_posts(); ?>
 
