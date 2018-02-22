@@ -21,9 +21,10 @@ $the_query = new WP_Query ( $args );
 		<?php endwhile; endif; ?>
 
 
-    </ol>
+	</ol>
 
-    <!-- rewind posts to loop back to beginning once end is reached -->
+
+	<!-- rewind posts to loop back to beginning once end is reached -->
 	<?php rewind_posts(); ?>
 
 
@@ -31,7 +32,7 @@ $the_query = new WP_Query ( $args );
 		
 
 
-    	<!-- start second loop with args -->
+		<!-- start second loop with args -->
 		<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
 	          $thumbnail_id   = get_post_thumbnail_id();
 	          $thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id, 'full', true );
@@ -81,6 +82,6 @@ $the_query = new WP_Query ( $args );
 
 
     	<!-- end second loop -->
-		<?php endwhile;	endif; ?>
+    	<?php endwhile;	endif; ?>
     </div>
 </div>
