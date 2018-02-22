@@ -29,6 +29,9 @@ var $ = jQuery.noConflict();
 		//Align NGG Images
 		$(".ngg-gallery-thumbnail").find('img').addClass('mx-auto d-block img-thumbnail');
 
+		//Add class to carousel image coming from "featured image"
+		$(".carousel-item").find('img').addClass('k911-carousel-img');
+
 
 
 

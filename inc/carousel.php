@@ -66,11 +66,13 @@ $the_query = new WP_Query ( $args );
 
 
 	    			</h1>
-	    			<span id="carouselExcerpt" class="text-shadow d-none d-sm-block">
+	    			<span class="text-shadow d-none d-sm-block pb-2">
 
-	    				<!-- excerpt of article -->
-	    				<?php the_excerpt(); ?>
-
+	    				<!-- excerpt of article without "read more" button -->
+	    				<?php $nobutton_excerpt = get_the_excerpt();
+							if ( '' != $nobutton_excerpt ) {}
+							echo $nobutton_excerpt;
+						?>
 
 	    			</span>
 	    		</div>
@@ -80,7 +82,5 @@ $the_query = new WP_Query ( $args );
 
     	<!-- end second loop -->
 		<?php endwhile;	endif; ?>
-
-		
     </div>
 </div>
