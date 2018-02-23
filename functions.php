@@ -126,7 +126,7 @@ function k911_pagination($pages = '', $range = 1) {
             echo "<li class='page-item'>";
                 if($paged > 2 && $paged > $range+1 && $showitems < $pages) 
                   echo "<a class='page-link' aria-label='First Page' href='".get_pagenum_link(1)."'>
-                          <i class='fa fa-angle-double-left fa-lg' aria-hidden='true'></i>
+                          <i class='fas fa-angle-double-left fa-lg'></i>
                           <span class='sr-only'>go to first page</span>
                       </a>"
             ;
@@ -134,7 +134,7 @@ function k911_pagination($pages = '', $range = 1) {
             echo "<li class='page-item'>";
                 if($paged > 1 && $showitems < $pages) 
                   echo "<a class='page-link' href='".get_pagenum_link($paged - 1)."'>
-                          <i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>
+                          <i class='fas fa-angle-left fa-lg'></i>
                           <span class='sr-only'>go to previous page</span>
                       </a>"
             ;
@@ -145,12 +145,12 @@ function k911_pagination($pages = '', $range = 1) {
                 ;}}
                 if ($paged < $pages && $showitems < $pages) 
                   echo "<a class='page-link' aria-label='Next Page' href='".get_pagenum_link($paged + 1)."'>
-                          <i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>
+                          <i class='fas fa-angle-right fa-lg'></i>
                           <span class='sr-only'>go to next page</span>
                         </a>";
                 if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) 
                   echo "<a class='page-link' aria-label='Last Page' href='".get_pagenum_link($pages)."'>
-                          <i class='fa fa-angle-double-right fa-lg' aria-hidden='true'></i>
+                          <i class='fas fa-angle-double-right fa-lg'></i>
                           <span class='sr-only'>go to last page</span>
                         </a>";
             global $wp_query;
@@ -158,3 +158,4 @@ function k911_pagination($pages = '', $range = 1) {
           }
 }
 //end pagination
+
