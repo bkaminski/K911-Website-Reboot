@@ -171,7 +171,7 @@ function k911_login_logo() { ?>
         }
         body 
         {
-            background: #f9fcfa;
+            background: #f9fcfa !important;
         }
         a:focus 
         {
@@ -195,18 +195,6 @@ function k911_login_logo() { ?>
             font-weight: bold;
             color: white;
         }
-        label[for=user_pass]:before 
-        {
-            content: "\f023 \2002";
-            font-family: FontAwesome;
-            color: #999;
-        }
-        label[for=user_login]:before 
-        {
-            content: "\f007 \2002";
-            font-family: FontAwesome;
-            color: #999;
-        }
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'k911_login_logo' );
@@ -220,14 +208,6 @@ function k911_login_logo_url_title() {
     return 'K911 Pet Transport';
 }
 add_filter( 'login_headertitle', 'k911_login_logo_url_title' );
-
-//LOAD STYLES AND SCRIPTS ON LOGIN PAGE
-
-function k911Admin_enqueue_script() {
-  wp_enqueue_script( 'fontawesome' , 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', false, null, true);
-}
-
-add_action( 'login_enqueue_scripts', 'k911Admin_enqueue_script', 1 );
 
 //ADMIN SECTION FAVICON ITEMS TO <head> SECTION
 function k911Favicon() {
