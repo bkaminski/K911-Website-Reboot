@@ -231,8 +231,8 @@ add_action( 'login_enqueue_scripts', 'k911Admin_enqueue_script', 1 );
 
 //ADMIN SECTION FAVICON ITEMS TO <head> SECTION
 function k911Favicon() {
- echo '<link rel="Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-Website-Reboot/media/favicon-32x32.png" />
- <link rel="Shortcut Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-Website-Reboot/media/favicon-32x32.png" />';
+ echo '<link rel="Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-WordPress-Theme/media/favicon-32x32.png" />
+ <link rel="Shortcut Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-WordPress-Theme/media/favicon-32x32.png" />';
  }
  add_action( 'login_head', 'k911Favicon' );
  add_action( 'admin_head', 'k911Favicon' );
