@@ -160,14 +160,14 @@ function k911_pagination($pages = '', $range = 1) {
 //end pagination
 
 //======================================================= STYLE LOGIN SCREEN
-function my_login_logo() { ?>
+function k911_login_logo() { ?>
     <style type="text/css">
         .login h1 a 
         {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/media/k911-web-logo.png) !important;
-            background-size: 300px !important;
-            width: 300px !important;
-            height: 120px !important
+            background-size: 200px !important;
+            width: 200px !important;
+            height: 200px !important;
         }
         body 
         {
