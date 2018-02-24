@@ -21,12 +21,12 @@
 								<span class="badge badge-success">Date Posted: <?php the_time('m-d-Y') ?></span>
 									<?php the_excerpt(); ?>
 								<hr>
-								</div>	
-								<?php endwhile; else : ?>
-									<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
-								<?php endif; ?>
-							</div>
+							</div>	
+							<?php endwhile; else : ?>
+								<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
+							<?php endif; ?>
 						</div>
+					</div>
 					<?php echo k911_pagination(); ?>
 				</div>
 			</div>
