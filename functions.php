@@ -217,4 +217,18 @@ function k911Favicon() {
  add_action( 'login_head', 'k911Favicon' );
  add_action( 'admin_head', 'k911Favicon' );
 
+//LOAD STYLES AND SCRIPTS ON LOGIN PAGE
+function k911_admin_enqueue_style() {
+  wp_enqueue_style('bootstrap4.0-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), null);
+  wp_enqueue_style('k911-styles', get_template_directory_uri() . '/style.css', array(), null);
+}
+
+function k911_admin_enqueue_script() {
+  wp_enqueue_script( 'fontawesome' ,  'https://use.fontawesome.com/releases/v5.0.6/js/all.js', false, null, true, null);
+  wp_enqueue_script('Bootstrap-4x', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), null, true, null);
+}
+
+add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_style', 10 );
+add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_script', 1 );
+
 //================================================================= END STYLE LOGIN SCREEN
