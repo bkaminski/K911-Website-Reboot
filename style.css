@@ -541,7 +541,7 @@ div.wpcf7 .ajax-loader
     }
     .dropdown-menu
     {
-        margin-top: 28px;
+        margin-top: 30px;
         padding-left: 0;
     }
     .btn-help
@@ -573,6 +573,11 @@ div.wpcf7 .ajax-loader
     .k911-carousel-img
     {
         max-width: 100%;
+    }
+    .dropdown-menu
+    {
+        margin-top: 28px;
+        padding-left: 0;
     }
 }
 
