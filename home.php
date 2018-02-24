@@ -17,7 +17,7 @@
 									<?php endif; ?>
 								</div>
 								<div class="col-md-9">
-										<h1><a href='<?php the_permalink() ?>'rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h1>
+										<h1><a href='<?php the_permalink() ?>' rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h1>
 										<span class="badge badge-success">Date Posted: <?php the_time('m-d-Y') ?></span>
 										<?php the_excerpt(); ?>
 										<hr>
