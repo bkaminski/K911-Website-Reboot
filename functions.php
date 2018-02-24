@@ -226,6 +226,7 @@ function k911_admin_enqueue_style() {
 function k911_admin_enqueue_script() {
   wp_enqueue_script( 'fontawesome' ,  'https://use.fontawesome.com/releases/v5.0.6/js/all.js', false, null, true, null);
   wp_enqueue_script('Bootstrap-4x', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), null, true, null);
+  wp_enqueue_script('k911-scripts', get_template_directory_uri() . '/js/k911.js', array('jquery'), null, true, null);
 }
 
 add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_style', 10 );
