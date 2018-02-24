@@ -27,7 +27,7 @@
 								<?php endif; ?>
 							</div>
 						</div>
-						<?php echo k911_pagination(); ?>
+					<?php echo k911_pagination(); ?>
 				</div>
 			</div>
 		</div>
