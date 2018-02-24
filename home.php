@@ -30,5 +30,6 @@
 						<?php echo k911_pagination(); ?>
 				</div>
 			</div>
+		</div>
 	</main>
 <?php get_footer(); ?>
