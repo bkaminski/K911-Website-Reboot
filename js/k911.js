@@ -26,6 +26,11 @@ var $ = jQuery.noConflict();
 		//Add Image Class to Featured image on Home Page
 		$("#featImg").find('img').addClass('img-thumbnail');
 
+		//Add img-thumbnail Bootstrap class to news page tumbs
+		$(".k911-news-img").find('img').addClass('img-thumbnail');
+
+
+
 		//Align NGG Images
 		$(".ngg-gallery-thumbnail").find('img').addClass('mx-auto d-block img-thumbnail');
 

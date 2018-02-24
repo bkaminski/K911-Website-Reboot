@@ -9,7 +9,7 @@
 						<div class="mt-4 k911-main">
 							<div class="row">
 								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-								<div class="col-md-3 pt-3">
+								<div class="col-md-3 pt-3 k911-news-img">
 									<?php if ( has_post_thumbnail() ) : ?>
 	    								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 	        								<?php the_post_thumbnail('medium'); ?>
@@ -17,17 +17,17 @@
 									<?php endif; ?>
 								</div>
 								<div class="col-md-9">
-										<h1><a href='<?php the_permalink() ?>' rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h1>
+										<h1 class="mt-2"><a href='<?php the_permalink() ?>' rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h1>
 										<span class="badge badge-success">Date Posted: <?php the_time('m-d-Y') ?></span>
 										<?php the_excerpt(); ?>
-										<hr>
+								<hr>
 								</div>	
 								<?php endwhile; else : ?>
 									<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
 								<?php endif; ?>
 							</div>
 						</div>
-					<?php echo k911_pagination(); ?>
+						<?php echo k911_pagination(); ?>
 				</div>
 			</div>
 		</div>
