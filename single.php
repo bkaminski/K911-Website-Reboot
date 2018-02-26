@@ -35,6 +35,11 @@
 							<?php the_content(); ?>
 
 
+							<!-- Call in comments loop -->
+							<?php if ( comments_open() || get_comments_number() ) :comments_template(); endif; ?>
+
+
+
 						</div>
 				</div>
 				<div id="k911Tags" class="col-lg-12 k911-tags">
