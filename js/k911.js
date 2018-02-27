@@ -59,15 +59,14 @@ var $window = $(window);
      //Different from Bootstrap's 768px but working and tested
      function checkWidth() {
         if ($window.width() < 750) {
-            
+            $(".k911-news-img").find('img').addClass('mx-auto d-block');
         };
         if ($window.width() >= 750) {
-            
+            $(".k911-news-img").find('img').removeClass('mx-auto d-block');
         }
     }
     // Execute on load
     checkWidth();
     // Bind event listener
 $(window).resize(checkWidth);	
-	
 
