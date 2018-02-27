@@ -12,6 +12,6 @@ $(document).ready(function () {
     $("#wp-submit").removeClass('button button-primary button-large').addClass('btn btn-info btn-rounded btn-lg pr-5 pl-5');
     $(".login form .forgetmenot").addClass('text-center mb-3');
     $(".message").removeClass('message').addClass('alert alert-info text-center');
-    $("#nav").addClass('text-center').find('a').addClass('btn btn-success btn-sm btn-rounded text-white pr-5 pl-5');
+    $("#nav").addClass('text-center').find('a').addClass('btn btn-success btn-sm btn-rounded-dark text-white pr-5 pl-5');
     $("#backtoblog").addClass('text-center');
 });
