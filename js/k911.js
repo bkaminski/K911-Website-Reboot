@@ -37,6 +37,16 @@ var $ = jQuery.noConflict();
 		//Add class to carousel image coming from "featured image"
 		$(".carousel-item").find('img').addClass('k911-carousel-img');
 
+		// Add slideDown animation to dropdown
+		$('.dropdown').on('show.bs.dropdown', function(e){
+			$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+		});
+
+		// Add slideUp animation to dropdown
+		$('.dropdown').on('hide.bs.dropdown', function(e){
+			$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+		});
+
 
 
 
