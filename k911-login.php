@@ -46,7 +46,7 @@ get_header(); ?>
 
 								    	echo " | ";
 								    wp_register('', ''); // Display "Site Admin" link.
-								    echo " </p> ";
+								    	echo " </p> ";
 								}
 							?>
 
