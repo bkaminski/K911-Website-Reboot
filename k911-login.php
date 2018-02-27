@@ -40,9 +40,13 @@ get_header(); ?>
 							    );
 							    wp_login_form( $args );
 								} else { // If logged in:
+										echo "<div class='alert alert-success text-center'>You're already logged in</div>";
+										echo "<p class='text-center'>",
 								    wp_loginout( home_url() ); // Display "Log Out" link.
+
 								    	echo " | ";
 								    wp_register('', ''); // Display "Site Admin" link.
+								    echo " </p> ";
 								}
 							?>
 
