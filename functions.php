@@ -99,7 +99,7 @@ add_filter( 'wp_mail_from', 'k911_mail_from' );
 function excerpt_read_more_link($output)
 {
     global $post;
-    return $output . '<a class="btn btn-lg btn-info btn-rounded text-uppercase" href="'. get_permalink() . '">Read More <i class="fas fa-angle-double-right fa-fw fa-lg"></i></a>';
+    return $output . '<a class="btn btn-lg btn-info btn-rounded-dark text-uppercase" href="'. get_permalink() . '">Read More <i class="fas fa-angle-double-right fa-fw fa-lg"></i></a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button
