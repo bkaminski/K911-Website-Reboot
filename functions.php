@@ -173,21 +173,15 @@ function k911_login_logo() { ?>
         {
             background: #f9fcfa !important;
         }
-        a:focus 
-        {
-            box-shadow: none;
-        }
-        .login form {
-            background: transparent;
-        }
         .login form::before 
         {
             display: block;
-            content: "Website Administration Area";
+            content: "K911 Website Admin Area";
             margin-top: -20px;
             padding-bottom: 20px;
             font-size: 18px;
             text-align: center;
+            font-weight: bold;
         }
         .login label 
         {
@@ -211,8 +205,8 @@ add_filter( 'login_headertitle', 'k911_login_logo_url_title' );
 
 //ADMIN SECTION FAVICON ITEMS TO <head> SECTION
 function k911Favicon() {
- echo '<link rel="Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-WordPress-Theme/media/favicon-32x32.png" />
- <link rel="Shortcut Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-WordPress-Theme/media/favicon-32x32.png" />';
+ echo '<link rel="Icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/media/favicon-32x32.png" />
+ <link rel="Shortcut Icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>media/favicon-32x32.png" />';
  }
  add_action( 'login_head', 'k911Favicon' );
  add_action( 'admin_head', 'k911Favicon' );

@@ -161,9 +161,9 @@ div.wpcf7 .ajax-loader
 
     width: 75px;
     height: 75px;
-    padding: 0;
-    margin-left: 45%;
     margin-top: 20px;
+    margin-left: 45%;
+    padding: 0;
 
     border: none;
     background-image: none !important;
@@ -488,6 +488,38 @@ div.wpcf7 .ajax-loader
 .phone-badge
 {
     font-size: 5.5vw;
+}
+/* WordPress Login Page Styles */
+#login
+{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+.login form .forgetmenot
+{
+    font-weight: 400;
+
+    float: none;
+
+    margin-bottom: 0;
+}
+.login form
+{
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 46px;
+
+    background: #d3d4d9;
+    box-shadow: none;
+}
+.admin-login
+{
+    background: #d3d4d9 !important;
+    background-image: url('media/squared-metal.png') !important;
+    background-repeat: repeat !important;
+    background-position: center center !important;
+    background-size: auto !important;
 }
 
 /* ========================= End Custom Styles ========================= */
