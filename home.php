@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="alert alert-info mt-3">
-						<h1 class="display-4 text-shadow">K911 News:</h1>
+						<h1 class="display-4 text-shadow">K911 News</h1>
 					</div>
 					<div class="mt-4 k911-main">
 						<div class="row">
