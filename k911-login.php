@@ -28,7 +28,7 @@ get_header(); ?>
   												<?php if ( ! is_user_logged_in() ) { 
   													$args = array(
   														'redirect' => admin_url(), 
-  														'form_id' => 'loginform-custom', 
+  														'form_id' => 'loginform-k911', 
   														'label_username' => __( 'Username:' ),
   														'label_password' => __( 'Password:' ),
   														'label_remember' => __( 'Remember Me' ),
@@ -36,21 +36,26 @@ get_header(); ?>
   														'remember' => true
   													);
   													wp_login_form( $args ); ?>
+  												</div>
+  													<?php
+		  												echo "<div class='card-footer'>";
+		  												echo "<div class='row'>";
+		  												echo "<div class='col-sm-6'><span class='k911-loginout'>";
+		  											?>
+		  											<a id="lostPass" class="btn btn-warning btn-rounded pr-5 pl-5" href="<?php echo wp_lostpassword_url(); ?>">Lost Password?</a>
+		  											<?php
+		  												echo "</span></div>";
+		  												echo "<div class='col-sm-6'><span class='k911-adminregister'>";
+															wp_register('', '');
+														echo "</span></div>";
+														echo "</div>";
+														echo "</div>";  	
+													?>
   													<!-- end login form -->
-  													<?php } else { echo "<div class='alert alert-success text-center'>You're already logged in</div>"; ?>
+  													<?php } else { echo "<div class='alert alert-success text-center'>You're already logged in</div>"; } ?>
   											</div>
-  											<?php
-  												echo "<div class='card-footer'>";
-  												echo "<div class='row'>";
-  												echo "<div class='col-sm-6'><span class='k911-loginout'>";
-  													wp_loginout( home_url() );
-  												echo "</span></div>";
-  												echo "<div class='col-sm-6'><span class='k911-adminregister'>";
-													wp_register('', '');
-												echo "</span></div>";
-												echo "</div>";
-												echo "</div>";  	
-											}?>
+  										</div>
+  											
 									</div>
 								</div>
 							</div>

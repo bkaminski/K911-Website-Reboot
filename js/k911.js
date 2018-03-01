@@ -48,12 +48,11 @@ var $ = jQuery.noConflict();
 		});
 
 		//Login Page Items
-		$(".k911-loginout").find('a').addClass('btn btn-secondary btn-rounded btn-block');
-		$(".k911-adminregister").find('a').addClass('btn btn-info btn-rounded btn-block');
-
-
-
-
+		$(".k911-adminregister").find('a').addClass('btn btn-success btn-rounded btn-block');
+		$("#loginform-k911").find('p').addClass('form-group').css("color", "#000");
+		$("#user_login, #user_pass").addClass('form-control');
+		$("#wp-submit").removeClass('button button-primary').addClass('btn btn-info btn-rounded-dark pr-5 pl-5');
+		
 	//End Ready	
 	});
 
