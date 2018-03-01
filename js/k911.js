@@ -48,8 +48,8 @@ var $ = jQuery.noConflict();
 		});
 
 		//Login Page Items
-		$(".k911-loginout").find('a').addClass('btn btn-secondary btn-rounded-dark btn-block');
-		$(".k911-adminregister").find('a').addClass('btn btn-info btn-rounded-dark btn-block');
+		$(".k911-loginout").find('a').addClass('btn btn-secondary btn-rounded btn-block');
+		$(".k911-adminregister").find('a').addClass('btn btn-info btn-rounded btn-block');
 
 
 
