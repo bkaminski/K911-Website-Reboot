@@ -47,6 +47,10 @@ var $ = jQuery.noConflict();
 			$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 		});
 
+		//Login Page Items
+		$(".k911-loginout").find('a').addClass('btn btn-secondary btn-rounded-dark btn-block');
+		$(".k911-adminregister").find('a').addClass('btn btn-info btn-rounded-dark btn-block');
+
 
 
 

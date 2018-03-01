@@ -24,32 +24,54 @@ get_header(); ?>
 
 							</h1>
 						</div>
-						<div class="mt-4 k911-main">
+							<div class="mt-4 k911-main">
+
+								<div class="col-md-6 mx-auto d-block">
+									<div class="card text-white bg-secondary mb-3">
+  										<div class="card-header text-center">K911 User Login:</div>
+								  	<div class="card-body">
+								    	<!-- call user login form -->
+										<?php if ( ! is_user_logged_in() ) { 
+										    $args = array(
+										        'redirect' => admin_url(), 
+										        'form_id' => 'loginform-custom',
+										        'label_username' => __( 'Username:' ),
+										        'label_password' => __( 'Password:' ),
+										        'label_remember' => __( 'Remember Me' ),
+										        'label_log_in' => __( 'Log In' ),
+										        'remember' => true
+										    );
+										wp_login_form( $args ); ?>
+										<!-- end login form -->
+										<?php
+											} else {
+												echo "<div class='alert alert-success text-center'>You're already logged in</div>";
+										?>
+								  	</div>
+								  		<?php
+												echo "<div class='card-footer'>";
+											    echo "<div class='row'>";
+												
 
 
-							<!-- call user login form -->
-							<?php if ( ! is_user_logged_in() ) { // Display WordPress login form:
-							    $args = array(
-							        'redirect' => admin_url(), 
-							        'form_id' => 'loginform-custom',
-							        'label_username' => __( 'Username:' ),
-							        'label_password' => __( 'Password:' ),
-							        'label_remember' => __( 'Remember Me' ),
-							        'label_log_in' => __( 'Log In' ),
-							        'remember' => true
-							    );
-							    wp_login_form( $args );
-								} else { // If logged in:
-										echo "<div class='alert alert-success text-center'>You're already logged in</div>";
-										echo "<p class='text-center'>",
-								    wp_loginout( home_url() ); // Display "Log Out" link.
+													echo "<div class='col-sm-6'>
+															<span class='k911-loginout'>";	
+												    			wp_loginout( home_url() );
+												    echo "</span></div>"; 
+											    
+											    	echo "<div class='col-sm-6'>
+											    			<span class='k911-adminregister'>";
+											    				wp_register('', ''); 
+											    	echo "</span></div>";
 
-								    	echo " | ";
-								    wp_register('', ''); // Display "Site Admin" link.
-								    	echo " </p> ";
-								}
-							?>
-
+											    echo "</div>";
+											    echo "</div>";
+											    	
+											}
+										?>
+								</div>
+		
+							</div>
 						</div>
 				</div>
 				<div id="k911Tags" class="col-lg-12 k911-tags">
