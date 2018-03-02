@@ -364,13 +364,14 @@ background-color: #dc3545;
 @keyframes color {
 0% {
 background-color: #dc3545;
-} 
+}
 50% {
 background-color: #7d2029;
-} 
+}
 100% {
 background-color: #dc3545;
-}}
+}
+}
 /* End Pulsating color */
 .fa-toggler {
 padding-top: 10px;
