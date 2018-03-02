@@ -12,519 +12,406 @@ Tags: k911, animal transport, pet emergency service, emergency pet transport ser
 */
 
 /* ========================= Globals ========================= */
-body
-{
-    font-size: 1.1rem;
-
-    background: #f9fcfa;
+body {
+font-size: 1.1rem;
+background: #f9fcfa;
 }
-a
-{
-    word-wrap: break-word;
-
-    outline: none;
+a {
+word-wrap: break-word;
+outline: none;
 }
 /* ========================= End Globals ========================= */
 
 
 /* ========================= WordPress Image Classes ========================= */
 
-.alignnone
-{
-    margin: 5px 20px 20px 0;
+.alignnone {
+margin: 5px 20px 20px 0;
 }
 
 .aligncenter,
-div.aligncenter
-{
-    display: block;
-
-    margin: 5px auto 5px auto;
+div.aligncenter {
+display: block;
+margin: 5px auto 5px auto;
 }
 
-.alignright
-{
-    float: right;
-
-    margin: 5px 0 20px 20px;
+.alignright {
+float: right;
+margin: 5px 0 20px 20px;
 }
 
-.alignleft
-{
-    float: left;
-
-    margin: 5px 20px 20px 0;
+.alignleft {
+float: left;
+margin: 5px 20px 20px 0;
 }
 
-a img.alignright
-{
-    float: right;
-
-    margin: 5px 0 20px 20px;
+a img.alignright {
+float: right;
+margin: 5px 0 20px 20px;
 }
 
-a img.alignnone
-{
-    margin: 5px 20px 20px 0;
+a img.alignnone {
+margin: 5px 20px 20px 0;
 }
 
-a img.alignleft
-{
-    float: left;
-
-    margin: 5px 20px 20px 0;
+a img.alignleft {
+float: left;
+margin: 5px 20px 20px 0;
 }
 
-a img.aligncenter
-{
-    display: block;
-
-    margin-right: auto;
-    margin-left: auto;
+a img.aligncenter {
+display: block;
+margin-right: auto;
+margin-left: auto;
 }
 
-.wp-caption
-{
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-
-    text-align: center;
-
-    border: 1px solid #f0f0f0;
-    background: #d3d4d9;
+.wp-caption {
+max-width: 96%; /* Image does not overflow the content area */
+padding: 5px 3px 10px;
+text-align: center;
+border: 1px solid #f0f0f0;
+background: #d3d4d9;
 }
 
-.wp-caption.alignnone
-{
-    margin: 5px 20px 20px 0;
+.wp-caption.alignnone {
+margin: 5px 20px 20px 0;
 }
 
-.wp-caption.alignleft
-{
-    margin: 5px 20px 20px 0;
+.wp-caption.alignleft {
+margin: 5px 20px 20px 0;
 }
 
-.wp-caption.alignright
-{
-    margin: 5px 0 20px 20px;
+.wp-caption.alignright {
+margin: 5px 0 20px 20px;
 }
 
-.wp-caption img
-{
-    width: auto;
-    max-width: 98.5%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-
-    border: 0 none;
+.wp-caption img {
+width: auto;
+max-width: 98.5%;
+height: auto;
+margin: 0;
+padding: 0;
+border: 0 none;
 }
 
-.wp-caption-text
-{
-    font-size: 11px;
-    line-height: 17px;
-
-    margin: 0;
-    padding: 0 4px 5px;
+.wp-caption-text {
+font-size: 11px;
+line-height: 17px;
+margin: 0;
+padding: 0 4px 5px;
 }
 /* ========================= End WordPress Image Classes ========================= */
 
 /*  ========================= WP Plugin Overrides  ========================= */
 
-div.wpcf7-validation-errors
-{
-    font-weight: bold;
-
-    padding: 10px;
-
-    color: #f9fcfa;
-    border: 2px solid #000;
-    background: #dc3545;
+div.wpcf7-validation-errors {
+font-weight: bold;
+padding: 10px;
+color: #f9fcfa;
+border: 2px solid #000000;
+background: #dc3545;
 }
 
-.ngg-gallery-thumbnail-box
-{
-    float: none;
-
-    width: 50%;
-    margin-bottom: 13px;
+.ngg-gallery-thumbnail-box {
+float: none;
+width: 50%;
+margin-bottom: 13px;
 }
-.ngg-gallery-thumbnail
-{
-    border: 0 !important;
+.ngg-gallery-thumbnail {
+border: 0 !important;
 }
-div.wpcf7 .ajax-loader
-{
-    display: inline-block;
-    visibility: hidden;
-
-    width: 75px;
-    height: 75px;
-    margin-top: 20px;
-    margin-left: 45%;
-    padding: 0;
-
-    border: none;
-    background-image: none !important;
+div.wpcf7 .ajax-loader {
+display: inline-block;
+visibility: hidden;
+width: 75px;
+height: 75px;
+margin-top: 20px;
+margin-left: 45%;
+padding: 0;
+border: none;
+background-image: none !important;
 }
 
 /*  ========================= End WP Plugin Overrides  ========================= */
 
 
 /* ========================= Bootstrap overrides ========================= */
-.carousel
-{
-    max-height: 600px;
+.carousel {
+max-height: 600px;
 }
-.carousel-inner
-{
-    max-height: 600px;
+.carousel-inner {
+max-height: 600px;
 }
-.carousel-item
-{
-    max-height: 600px;
+.carousel-item {
+max-height: 600px;
 }
-.card-body
-{
-    background: #f9fcfa;
+.card-body {
+background: #f9fcfa;
 }
-.navbar
-{
-    padding: .5rem .5rem;
-
-    border-bottom: 6px solid #4b88a2;
+.navbar {
+padding: 0.5rem 0.5rem;
+border-bottom: 6px solid #4b88a2;
 }
-.text-white
-{
-    color: #f9fcfa !important;
+.text-white {
+color: #f9fcfa !important;
 }
-.bg-dark
-{
-    font-size: 20px;
-
-    background-color: #000 !important;
+.bg-dark {
+font-size: 20px;
+background-color: #000000 !important;
 }
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show > .nav-link
-{
-    color: #f9fcfa;
+.navbar-dark .navbar-nav .show > .nav-link {
+color: #f9fcfa;
 }
-.navbar-dark .navbar-nav .nav-link
-{
-    color: #f9fcfa;
+.navbar-dark .navbar-nav .nav-link {
+color: #f9fcfa;
 }
 
-.navbar-dark .navbar-toggler
-{
-    color: #f9fcfa !important;
-    border: 2px solid #f9fcfa !important;
-    border-color: #d3d4d9 !important;
-    background: #4b88a2;
+.navbar-dark .navbar-toggler {
+color: #f9fcfa !important;
+border: 2px solid #f9fcfa !important;
+border-color: #d3d4d9 !important;
+background: #4b88a2;
 }
-.btn-info
-{
-    color: #f9fcfa;
-    border-color: #59a0be;
-    background-color: #4b88a2;
+.btn-info {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #4b88a2;
 }
-.alert-info
-{
-    color: #f9fcfa;
-    border-color: #59a0be;
-    background-color: #4b88a2;
+.alert-info {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #4b88a2;
 }
-.alert-danger
-{
-    color: #f9fcfa;
-    border-color: #59a0be;
-    background-color: #dc3545;
+.alert-danger {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #dc3545;
 }
-.alert-secondary
-{
-    color: #000;
-    border-color: #666;
-    background-color: #d3d4d9;
+.alert-secondary {
+color: #000000;
+border-color: #666666;
+background-color: #d3d4d9;
 }
 
-.btn-info:hover
-{
-    color: #f9fcfa;
-    border-color: #59a0be;
-    background-color: #559cba;
+.btn-info:hover {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #559cba;
 }
-.text-info
-{
-    color: #4b88a2 !important;
+.text-info {
+color: #4b88a2 !important;
 }
-.dropdown-menu
-{
-    min-width: 250px;
-    padding-left: 20px;
-
-    color: #f9fcfa;
-    border: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    background-color: #4b88a2;
-    box-shadow: 2px 2px 6px #000;
+.dropdown-menu {
+min-width: 250px;
+padding-left: 20px;
+color: #f9fcfa;
+border: 0;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+background-color: #4b88a2;
+box-shadow: 2px 2px 6px #000000;
 }
-.modal-body
-{
-    padding: 0rem;
-
-    background: #f9fcfa;
+.modal-body {
+padding: 0rem;
+background: #f9fcfa;
 }
-.dropdown-menu .nav-link:hover
-{
-    width: 100%;
-    margin-left: -18px;
-    padding-left: 18px;
-
-    opacity: .6;
-    color: #000 !important;
-    background: #f9fcfa;
+.dropdown-menu .nav-link:hover {
+width: 100%;
+margin-left: -18px;
+padding-left: 18px;
+opacity: 0.6;
+color: #000000 !important;
+background: #f9fcfa;
 }
 /* ========================= End Bootstrap overrides ========================= */
 
 /* ========================= Custom Styles ========================= */
-.btn-rounded
-{
-    border: 4px solid #fff;
-    border-radius: 15rem;
+.btn-rounded {
+border: 4px solid #ffffff;
+border-radius: 15rem;
 }
-.btn-rounded-dark
-{
-    border: 4px solid #d3d4d9;
-    border-radius: 15rem;
+.btn-rounded-dark {
+border: 4px solid #d3d4d9;
+border-radius: 15rem;
 }
-.emergency-modal-title
-{
-    margin-right: auto;
-    margin-left: auto;
+.emergency-modal-title {
+margin-right: auto;
+margin-left: auto;
 }
-.emergency-modal-header
-{
-    border-bottom: 3px solid #4b88a2;
-    background: #f3ec1a;
+.emergency-modal-header {
+border-bottom: 3px solid #4b88a2;
+background: #f3ec1a;
 }
-.emergency-modal-footer
-{
-    border-top: 3px solid #4b88a2;
-    background: #d3d4d9;
+.emergency-modal-footer {
+border-top: 3px solid #4b88a2;
+background: #d3d4d9;
 }
-.k911-info
-{
-    min-height: 330px;
-    margin-top: 108px;
-
-    background: #d3d4d9;
-    background-image: url('media/squared-metal.png');
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: auto;
+.k911-info {
+min-height: 330px;
+margin-top: 108px;
+background: #d3d4d9;
+background-image: url("media/squared-metal.png");
+background-repeat: repeat;
+background-position: center center;
+background-size: auto;
 }
 
-.k911-carousel
-{
-    margin-top: 0;
-
-    box-shadow: -2px -2px 8px;
+.k911-carousel {
+margin-top: 0;
+box-shadow: -2px -2px 8px;
 }
-.k911-home
-{
-    border-bottom: 6px solid #f3ec1a;
+.k911-home {
+border-bottom: 6px solid #f3ec1a;
 }
 
-.k911-main
-{
-    min-height: 730px;
+.k911-main {
+min-height: 730px;
 }
-.home-content-1
-{
-    background: #4b88a2;
-    background-image: url('media/dark-circles.png');
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: auto;
+.home-content-1 {
+background: #4b88a2;
+background-image: url("media/dark-circles.png");
+background-repeat: repeat;
+background-position: center center;
+background-size: auto;
 }
-.home-content-2
-{
-    border-top: 6px solid #d3d4d9;
-    border-bottom: 6px solid #d3d4d9;
+.home-content-2 {
+border-top: 6px solid #d3d4d9;
+border-bottom: 6px solid #d3d4d9;
 }
-.home-content-3
-{
-    background: #4b88a2;
-    background-image: url('media/dark-circles.png');
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: auto;
+.home-content-3 {
+background: #4b88a2;
+background-image: url("media/dark-circles.png");
+background-repeat: repeat;
+background-position: center center;
+background-size: auto;
 }
-.page-main-content
-{
-    min-height: 900px;
-    margin-top: 108px;
-
-    background: #f9fcfa;
+.page-main-content {
+min-height: 900px;
+margin-top: 108px;
+background: #f9fcfa;
 }
-.k911-footer
-{
-    width: 100%;
-    min-height: 300px;
-    padding-bottom: 2px;
-
-    border-top: 6px solid #f3ec1a;
-    background: #000;
+.k911-footer {
+width: 100%;
+min-height: 300px;
+padding-bottom: 2px;
+border-top: 6px solid #f3ec1a;
+background: #000000;
 }
-.page-body-content
-{
-    min-height: 900px;
-
-    background: #d3d4d9;
-    background-image: url('media/squared-metal.png');
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: auto;
+.page-body-content {
+min-height: 900px;
+background: #d3d4d9;
+background-image: url("media/squared-metal.png");
+background-repeat: repeat;
+background-position: center center;
+background-size: auto;
 }
-.text-shadow
-{
-    text-shadow: 2px 2px 2px #666;
+.text-shadow {
+text-shadow: 2px 2px 2px #666666;
 }
-.box-shadow
-{
-    box-shadow: 2px 2px 6px #000;
+.box-shadow {
+box-shadow: 2px 2px 6px #000000;
 }
-.k911-carousel-img
-{
-    max-width: 100%;
+.k911-carousel-img {
+max-width: 100%;
 }
-.k911-carousel-title
-{
-    font-size: 6vw;
+.k911-carousel-title {
+font-size: 6vw;
 }
-.k911-card-footer
-{
-    background: #d3d4d9;
-    background-image: url('media/squared-metal.png');
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: auto;
+.k911-card-footer {
+background: #d3d4d9;
+background-image: url("media/squared-metal.png");
+background-repeat: repeat;
+background-position: center center;
+background-size: auto;
 }
-.k911-mission
-{
-    font-size: 7vw;
+.k911-mission {
+font-size: 7vw;
 }
-.k911-social
-{
-    min-height: 200px;
-
-    border-top: 6px solid #f3ec1a;
-    background: #d3d4d9;
+.k911-social {
+min-height: 200px;
+border-top: 6px solid #f3ec1a;
+background: #d3d4d9;
 }
 /* Pulsating CSS background */
-.help-button
-{
-    animation-name: color;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
-    color: #fff;
-    background-color: #dc3545;
+.help-button {
+animation-name: color;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+color: #ffffff;
+background-color: #dc3545;
 }
-.btn-help
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    margin-top: 26px;
-    margin-right: 85px;
-
-    animation-name: color;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
-    border: 2px solid #f9fcfa !important;
-    border-color: #d3d4d9 !important;
-    border-top-color: rgb(249, 252, 250);
-    border-right-color: rgb(249, 252, 250);
-    border-bottom-color: rgb(249, 252, 250);
-    border-left-color: rgb(249, 252, 250);
-    background-color: #dc3545;
+.btn-help {
+position: fixed;
+top: 0;
+right: 0;
+margin-top: 26px;
+margin-right: 85px;
+animation-name: color;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+border: 2px solid #f9fcfa !important;
+border-color: #d3d4d9 !important;
+border-top-color: rgb(249, 252, 250);
+border-right-color: rgb(249, 252, 250);
+border-bottom-color: rgb(249, 252, 250);
+border-left-color: rgb(249, 252, 250);
+background-color: #dc3545;
 }
 
-@keyframes color
-{
-    0%
-    {
-        background-color: #dc3545;
-    }
-    50%
-    {
-        background-color: #7d2029;
-    }
-    100%
-    {
-        background-color: #dc3545;
-    }
-}
+@keyframes color {
+0% {
+background-color: #dc3545;
+} 
+50% {
+background-color: #7d2029;
+} 
+100% {
+background-color: #dc3545;
+}}
 /* End Pulsating color */
-.fa-toggler
-{
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    color: #e6e6e6;
+.fa-toggler {
+padding-top: 10px;
+padding-bottom: 10px;
+color: #e6e6e6;
 }
-.k911-tags
-{
-    min-height: 50px;
-    padding-top: 15px;
-
-    background: #f3ec1a;
+.k911-tags {
+min-height: 50px;
+padding-top: 15px;
+background: #f3ec1a;
 }
-.header-fluid
-{
-    font-size: 7.5vw;
+.header-fluid {
+font-size: 7.5vw;
 }
-.phone-badge
-{
-    font-size: 5.5vw;
+.phone-badge {
+font-size: 5.5vw;
 }
 /* WordPress Login Page Styles */
-#login
-{
-    width: 100%;
-    margin: auto;
-    padding: 10px;
+#login {
+width: 100%;
+margin: auto;
+padding: 10px;
 }
-.login form .forgetmenot
-{
-    font-weight: 400;
-
-    float: none;
-
-    margin-bottom: 0;
+.login form .forgetmenot {
+font-weight: 400;
+float: none;
+margin-bottom: 0;
 }
-.login form
-{
-    margin-top: 20px;
-    margin-left: 0;
-    padding: 26px 24px 46px;
-
-    background: #d3d4d9;
-    box-shadow: none;
+.login form {
+margin-top: 20px;
+margin-left: 0;
+padding: 26px 24px 46px;
+background: #d3d4d9;
+box-shadow: none;
 }
-.admin-login
-{
-    background: #d3d4d9 !important;
-    background-image: url('media/squared-metal.png') !important;
-    background-repeat: repeat !important;
-    background-position: center center !important;
-    background-size: auto !important;
+.admin-login {
+background: #d3d4d9 !important;
+background-image: url("media/squared-metal.png") !important;
+background-repeat: repeat !important;
+background-position: center center !important;
+background-size: auto !important;
 }
 
 /* ========================= End Custom Styles ========================= */
@@ -533,89 +420,69 @@ div.wpcf7 .ajax-loader
 /* ========================= Media Queries ========================= */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px)
-{
+@media (min-width: 576px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px)
-{
-    .k911-carousel
-    {
-        margin-top: 0;
-    }
-    .k911-carousel-title
-    {
-        font-size: 2.5rem;
-    }
-    .k911-mission
-    {
-        font-size: 3.5rem;
-    }
-    .ngg-gallery-thumbnail-box
-    {
-        float: left;
-
-        width: 25%;
-    }
+@media (min-width: 768px) {
+.k911-carousel {
+margin-top: 0;
+}
+.k911-carousel-title {
+font-size: 2.5rem;
+}
+.k911-mission {
+font-size: 3.5rem;
+}
+.ngg-gallery-thumbnail-box {
+float: left;
+width: 25%;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px)
-{
-    .bg-dark
-    {
-        font-size: 17px;
-    }
-    .k911-carousel
-    {
-        margin-top: 108px;
-    }
+@media (min-width: 992px) {
+.bg-dark {
+font-size: 17px;
+}
+.k911-carousel {
+margin-top: 108px;
+}
 
-    .k911-carousel-img
-    {
-        max-width: 110%;
-    }
-    .dropdown-menu
-    {
-        margin-top: 30px;
-        padding-left: 0;
-    }
-    .btn-help
-    {
-        display: none;
-    }
-    .header-fluid
-    {
-        font-size: 3.0vw;
-    }
-    .phone-badge
-    {
-        font-size: 2.5vw;
-    }
-    .dropdown-menu .nav-link:hover
-    {
-        margin-left: 0;
-        padding-left: 10px;
-    }
+.k911-carousel-img {
+max-width: 110%;
+}
+.dropdown-menu {
+margin-top: 30px;
+padding-left: 0;
+}
+.btn-help {
+display: none;
+}
+.header-fluid {
+font-size: 3.0vw;
+}
+.phone-badge {
+font-size: 2.5vw;
+}
+.dropdown-menu .nav-link:hover {
+margin-left: 0;
+padding-left: 10px;
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px)
-{
-    .bg-dark
-    {
-        font-size: 20px;
-    }
-    .k911-carousel-img
-    {
-        max-width: 100%;
-    }
-    .dropdown-menu
-    {
-        margin-top: 28px;
-        padding-left: 0;
-    }
+@media (min-width: 1200px) {
+.bg-dark {
+font-size: 20px;
+}
+.k911-carousel-img {
+max-width: 100%;
+}
+.dropdown-menu {
+margin-top: 28px;
+padding-left: 0;
+}
 }
 
 
