@@ -35,7 +35,7 @@ get_header(); ?>
     											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     										</form>
     								</div>
-  									<div class="card-footer text-muted">
+    								<div class="card-footer text-muted">
   										<small>All donations help, no amount too small. Link will open in a new window.</small>
   									</div>
 								</div>
