@@ -25,7 +25,7 @@ get_header(); ?>
 									<div class="col-md-6">
 										<div class="card text-center border-dark mb-4">
 		  									<div class="card-header border-dark">
-		    									<i class="fab fa-paypal fa-fw fa-lg" style="color: #021e73;"></i> PayPal
+		  										<i class="fab fa-paypal fa-fw fa-lg" style="color: #021e73;"></i> PayPal
 		  									</div>
 		  									<div class="card-body">
 		  										<i class="fab fa-paypal fa-fw fa-3x mx-auto d-block" style="color: #021e73;"></i>
@@ -43,19 +43,17 @@ get_header(); ?>
 										</div>
 									</div>
 									<div class="col-md-6">
-										<div class="card text-center border-warning mb-3">
+										<div class="card text-center border-warning">
 		  									<div class="card-header border-warning">
 		    									<i class="fab fa-bitcoin fa-fw fa-lg" style="color: #f7931a;"></i> Bitcoin
 		  									</div>
-		  									<div class="card-body">
+		  									<div class="card-body pb-4 pb-5">
 		  										<i class="fab fa-bitcoin fa-fw fa-3x mx-auto d-block" style="color: #f7931a;"></i>
-		    									<br />
-		    									<br />
-		    									<br />
+		  										<h5 class="card-title">Use the QR Code Below to use Bitcoin:</h5>
 		    									<br />
 		  									</div>
 		  									<div class="card-footer border-warning text-muted">
-		    									<small>All donations help, no amount too small.</small>
+		  										<small>All donations help, no amount too small.</small>
 		  									</div>
 										</div>
 									</div>
