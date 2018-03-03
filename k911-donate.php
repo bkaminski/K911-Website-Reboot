@@ -43,7 +43,7 @@ get_header(); ?>
 										</div>
 									</div>
 									<div class="col-md-6">
-										<div class="card text-center border-warning">
+										<div class="card text-center border-warning mb-4">
 		  									<div class="card-header border-warning">
 		    									<i class="fab fa-bitcoin fa-fw fa-lg" style="color: #f7931a;"></i> Bitcoin
 		  									</div>
