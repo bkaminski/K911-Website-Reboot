@@ -49,7 +49,7 @@ get_header(); ?>
 		  									</div>
 		  									<div class="card-body pb-4 pb-5">
 		  										<i class="fab fa-bitcoin fa-fw fa-3x mx-auto d-block" style="color: #f7931a;"></i>
-		  										<h5 class="card-title">Use the QR Code Below to use Bitcoin:</h5>
+		  										<h5 class="card-title">Scan the QR Code Below to use Bitcoin:</h5>
 		    									<br />
 		  									</div>
 		  									<div class="card-footer border-warning text-muted">
