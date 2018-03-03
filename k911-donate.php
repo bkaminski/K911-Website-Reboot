@@ -27,7 +27,7 @@ get_header(); ?>
   									</div>
   									<div class="card-body">
   										<i class="fab fa-paypal fa-fw fa-3x mx-auto d-block" style="color: #021e73;"></i>
-    									<h5 class="card-title">Click the Donate Button Below to use PayPal:</h5>
+  										<h5 class="card-title">Click the Donate Button Below to use PayPal:</h5>
     										<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
     											<input type="hidden" name="cmd" value="_s-xclick">
     											<input type="hidden" name="hosted_button_id" value="WARE97BQM6SAJ">
@@ -36,7 +36,7 @@ get_header(); ?>
     										</form>
     								</div>
   									<div class="card-footer text-muted">
-    									<small>All donations help, no amount too small. Link will open in a new window.</small>
+  										<small>All donations help, no amount too small. Link will open in a new window.</small>
   									</div>
 								</div>
 							</div>
