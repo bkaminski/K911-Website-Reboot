@@ -36,7 +36,7 @@ get_header(); ?>
     										</form>
     								</div>
     								<div class="card-footer text-muted">
-  										<small>All donations help, no amount too small. Link will open in a new window.</small>
+    									<small>All donations help, no amount too small. Link will open in a new window.</small>
   									</div>
 								</div>
 							</div>
