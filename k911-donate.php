@@ -24,37 +24,37 @@ get_header(); ?>
 								<div class="row">
 									<div class="col-md-6">
 										<div class="card text-center border-dark mb-4">
-		  									<div class="card-header border-dark">
-		  										<i class="fab fa-paypal fa-fw fa-lg" style="color: #021e73;"></i> PayPal
-		  									</div>
-		  									<div class="card-body">
-		  										<i class="fab fa-paypal fa-fw fa-3x mx-auto d-block" style="color: #021e73;"></i>
-		  										<h5 class="card-title">Click the Donate Button Below to use PayPal:</h5>
-			    									<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-			    										<input type="hidden" name="cmd" value="_s-xclick">
-			    										<input type="hidden" name="hosted_button_id" value="WARE97BQM6SAJ">
-			    										<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" class="mx-auto d-block" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-			    										<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			    									</form>
-			    							</div>
-		    								<div class="card-footer border-dark text-muted">
-		    									<small>All donations help, no amount too small. Link will open in a new window.</small>
-		    								</div>
-		    							</div>
-		    						</div>
-		    						<div class="col-md-6">
-		    							<div class="card text-center border-warning mb-4">
-		    								<div class="card-header border-warning">
-		    									<i class="fab fa-bitcoin fa-fw fa-lg" style="color: #f7931a;"></i> Bitcoin
-		    								</div>
-		    								<div class="card-body pb-4 pb-5">
-		    									<i class="fab fa-bitcoin fa-fw fa-3x mx-auto d-block" style="color: #f7931a;"></i>
-		    									<h5 class="card-title">Scan the QR Code Below to use Bitcoin:</h5>
-		    									<br />
-		    								</div>
-		    								<div class="card-footer border-warning text-muted">
-		    									<small>All donations help, no amount too small.</small>
-		    								</div>
+											<div class="card-header border-dark">
+												<i class="fab fa-paypal fa-fw fa-lg" style="color: #021e73;"></i> PayPal
+											</div>
+											<div class="card-body">
+												<i class="fab fa-paypal fa-fw fa-3x mx-auto d-block" style="color: #021e73;"></i>
+												<h5 class="card-title">Click the Donate Button Below to use PayPal:</h5>
+													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+														<input type="hidden" name="cmd" value="_s-xclick">
+														<input type="hidden" name="hosted_button_id" value="WARE97BQM6SAJ">
+														<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" class="mx-auto d-block" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+														<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+													</form>
+											</div>
+											<div class="card-footer border-dark text-muted">
+												<small>All donations help, no amount too small. Link will open in a new window.</small>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="card text-center border-warning mb-4">
+											<div class="card-header border-warning">
+												<i class="fab fa-bitcoin fa-fw fa-lg" style="color: #f7931a;"></i> Bitcoin
+											</div>
+											<div class="card-body pb-4 pb-5">
+												<i class="fab fa-bitcoin fa-fw fa-3x mx-auto d-block" style="color: #f7931a;"></i>
+												<h5 class="card-title">Scan the QR Code Below to use Bitcoin:</h5>
+												<br />
+											</div>
+											<div class="card-footer border-warning text-muted">
+												<small>All donations help, no amount too small.</small>
+											</div>
 										</div>
 									</div>
 								</div>
