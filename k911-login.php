@@ -22,7 +22,7 @@ get_header(); ?>
 					<div class="mt-4 k911-main">
 						<div class="col-md-6 mx-auto d-block">
 							<div class="card text-white bg-secondary mb-3">
-								<div class="card-header text-center">K911 User Login:</div>
+								<div class="card-header text-center"><h3>K911 User Login:</h3></div>
 									<div class="card-body">
 									<!-- call user login form -->
 									<?php
@@ -37,27 +37,34 @@ get_header(); ?>
 												'remember' => true
 											);
 											wp_login_form( $args ); 
-											?>
-									</div>
-									<div class="card-footer">
-										<p>Test</p>
-									</div>
-									<?php
-										} else {
-											echo "<div class='alert alert-success text-center mb-5'>Welcome back $current_user->display_name.<br /> ";
-											echo "You are currently logged in.</div>";
 									?>
 									</div>
 									<div class="card-footer">
-										<div class="col-md">
-											<?php wp_loginout( home_url() ); ?>
-										</div> 
-										<div class="col-md">
-											<?php wp_register('', ''); ?>
+										<div class="row">
+											<div class="col-md">
+												<a class="btn btn-warning btn-rounded btn-block" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a>
+											</div>
+											<div class="col-md">
+												<a class="btn btn-success btn-rounded btn-block" href="<?php echo wp_registration_url(); ?>">Register</a>
+											</div>
 										</div>
-										}?>
+										<?php
+										} else {
+											echo "<div class='alert alert-success text-center mb-5'>Welcome back $current_user->display_name.<br /> ";
+											echo "You are currently logged in.<br /><br /><br />Please choose an option below.</div>";
+										?>
 									</div>
-  							</div>
+									<div class="card-footer">
+										<div class="row">
+											<div class="col-md btn-logout">
+												<?php
+													wp_loginout( home_url() ); 
+													echo "</div><div class='col-md btn-admin'>";
+													wp_register('', ''); 
+												}?>
+											</div>
+										</div>
+  									</div>
 						</div>
 					</div>
 				</div>
