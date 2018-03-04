@@ -54,6 +54,27 @@ get_header(); ?>
 												echo "<div class='alert alert-success text-center mt-3 mb-3'>Welcome back $current_user->display_name.<br />";
 												echo "You are currently logged in.<br /><br /><i class='fas fa-check fa-fw fa-3x'></i><br /><br />Please choose an option below.</div>";
 											?>
+											<?php
+												//function for getting the last login
+												function get_last_login($user_id) {
+												   $last_login = get_user_meta($user_id, 'last_login', true);
+												 
+												   //picking up wordpress date time format
+												   $date_format = get_option('date_format') . ' ' . get_option('time_format');
+												 
+												   //converting the login time to wordpress format
+												   $the_last_login = mysql2date($date_format, $last_login, false);
+												 
+												   //finally return the value
+												   return $the_last_login;
+												}
+												 
+												//get current user object
+												$current_user = wp_get_current_user();
+												 
+												//get the last login time by passing the user id to the above function.
+												echo get_last_login($current_user->ID);
+											?>
 										</div>
 									<div class="card-footer">
 										<div class="row">
