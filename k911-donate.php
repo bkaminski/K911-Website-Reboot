@@ -22,7 +22,7 @@ get_header(); ?>
 							<div class="mt-4 k911-main">
 								<?php the_content(); ?>
 								<div class="row">
-									<div class="col-md-6">
+									<div class="col-md card-deck">
 										<div class="card text-center border-dark mb-4">
 											<div class="card-header border-dark">
 												<i class="fab fa-paypal fa-fw fa-lg" style="color: #021e73;"></i> PayPal
@@ -42,7 +42,7 @@ get_header(); ?>
 											</div>
 										</div>
 									</div>
-									<div class="col-md-6">
+									<div class="col-md card-deck">
 										<div class="card text-center border-warning mb-4">
 											<div class="card-header border-warning">
 												<i class="fab fa-bitcoin fa-fw fa-lg" style="color: #f7931a;"></i> Bitcoin
