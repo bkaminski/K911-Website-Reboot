@@ -47,7 +47,7 @@ get_header(); ?>
 												<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password?</a>
 											</div>
 											<div class="col-md">
-												<a class="btn btn-success btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_registration_url(); ?>">Create Account</a>
+												<a class="btn btn-success btn-rounded btn-block mb-2 mt-2" href="/k911/register/">Create Account</a>
 											</div>
 											<?php
 											} else {
@@ -55,24 +55,13 @@ get_header(); ?>
 												echo "You are currently logged in.<br /><br /><i class='fas fa-check fa-fw fa-3x'></i><br /><br />Please choose an option below.</div>";
 											?>
 											<?php
-												//function for getting the last login
 												function get_last_login($user_id) {
 												   $last_login = get_user_meta($user_id, 'last_login', true);
-												 
-												   //picking up wordpress date time format
 												   $date_format = get_option('date_format') . ' ' . get_option('time_format');
-												 
-												   //converting the login time to wordpress format
 												   $the_last_login = mysql2date($date_format, $last_login, false);
-												 
-												   //finally return the value
 												   return $the_last_login;
 												}
-												 
-												//get current user object
 												$current_user = wp_get_current_user();
-												 
-												//get the last login time by passing the user id to the above function.
 												echo get_last_login($current_user->ID);
 											?>
 										</div>
