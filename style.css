@@ -5,8 +5,8 @@ Author: Ben Kaminski, Luci Karnai
 Author URI: https://benkaminski.com
 Description: Custom website and WordPress theme built exclusively for K911 Animal Transport. Fully responsive, mobile first designed, Bootstrap 4x powered theme with customizations and original design.
 Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v3.0
+License URI: https://github.com/bkaminski/K911-Website-Reboot/blob/master/LICENSE
 Text Domain: k911
 Tags: k911, animal transport, pet emergency service, emergency pet transport service, animal ambulance, pet ambulance
 */
@@ -164,6 +164,17 @@ color: #f9fcfa;
 border-color: #59a0be;
 background-color: #4b88a2;
 }
+.btn-info:hover {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #559cba;
+}
+.btn-warning {
+background-color: #f3ec1a;
+}
+.btn-warning:hover {
+background-color: #e0da19;
+}
 .alert-info {
 color: #f9fcfa;
 border-color: #59a0be;
@@ -178,11 +189,6 @@ background-color: #dc3545;
 color: #000000;
 border-color: #666666;
 background-color: #d3d4d9;
-}
-.btn-info:hover {
-color: #f9fcfa;
-border-color: #59a0be;
-background-color: #559cba;
 }
 .text-info {
 color: #4b88a2 !important;
