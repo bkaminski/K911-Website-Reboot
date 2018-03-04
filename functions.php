@@ -229,41 +229,14 @@ add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_script', 1 );
 //================================================================= END STYLE LOGIN SCREEN
 
 
-add_action('wp_login','wpdb_capture_user_last_login', 10, 2);
-function wpdb_capture_user_last_login($user_login, $user){
-    update_user_meta($user->ID, 'last_login', current_time('mysql'));
+//associating a function to login hook
+add_action('wp_login', 'set_last_login');
+ 
+//function for setting the last login
+function set_last_login($login) {
+   $user = get_userdatabylogin($login);
+ 
+   //add or update the last login value for logged in user
+   update_usermeta( $user->ID, 'last_login', current_time('mysql') );
 }
 
-add_filter( 'manage_users_columns', 'wpdb_user_last_login_column');
-function wpdb_user_last_login_column($columns){
-    $columns['lastlogin'] = __('Last Login', 'lastlogin');
-    return $columns;
-}
- 
-add_action( 'manage_users_custom_column',  'wpdb_add_user_last_login_column', 10, 3); 
-function wpdb_add_user_last_login_column($value, $column_name, $user_id ) {
-    if ( 'lastlogin' != $column_name )
-        return $value;
- 
-    return get_user_last_login($user_id,false);
-}
- 
-function get_user_last_login($user_id,$echo = true){
-    $date_format = get_option('date_format') . ' ' . get_option('time_format');
-    $last_login = get_user_meta($user_id, 'last_login', true);
-    $login_time = 'No previous logins on record.';
-    if(!empty($last_login)){
-       if(is_array($last_login)){
-            $login_time = mysql2date($date_format, array_pop($last_login), false);
-        }
-        else{
-            $login_time = mysql2date($date_format, $last_login, false);
-        }
-    }
-    if($echo){
-        echo $login_time;
-    }
-    else{
-        return $login_time;
-    }
-}
