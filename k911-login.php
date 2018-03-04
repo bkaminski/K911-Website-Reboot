@@ -22,7 +22,9 @@ get_header(); ?>
 					<div class="mt-5 k911-main">
 						<div class="col-md-6 mx-auto d-block">
 							<div class="card text-white bg-secondary">
-								<div class="card-header text-center"><h3>K911 User Login:</h3></div>
+								<div class="card-header text-center">
+									<h3><i class="fas fa-paw fa-fw fa-lg mr-1"></i> K911 User Login:</h3>
+								</div>
 									<div class="card-body">
 									<!-- call user login form -->
 									<?php
@@ -42,7 +44,7 @@ get_header(); ?>
 									<div class="card-footer">
 										<div class="row">
 											<div class="col-md">
-												<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a>
+												<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password?</a>
 											</div>
 											<div class="col-md">
 												<a class="btn btn-success btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_registration_url(); ?>">Create Account</a>
