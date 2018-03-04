@@ -19,9 +19,9 @@ get_header(); ?>
 							<?php the_title(); ?>
 						</h1>
 					</div>
-					<div class="mt-4 k911-main">
+					<div class="mt-5 k911-main">
 						<div class="col-md-6 mx-auto d-block">
-							<div class="card text-white bg-secondary mb-3">
+							<div class="card text-white bg-secondary">
 								<div class="card-header text-center"><h3>K911 User Login:</h3></div>
 									<div class="card-body">
 									<!-- call user login form -->
@@ -45,12 +45,12 @@ get_header(); ?>
 												<a class="btn btn-warning btn-rounded btn-block" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a>
 											</div>
 											<div class="col-md">
-												<a class="btn btn-success btn-rounded btn-block" href="<?php echo wp_registration_url(); ?>">Register</a>
+												<a class="btn btn-success btn-rounded btn-block" href="<?php echo wp_registration_url(); ?>">Create Account</a>
 											</div>
 										</div>
 										<?php
 										} else {
-											echo "<div class='alert alert-success text-center mb-5'>Welcome back $current_user->display_name.<br /> ";
+											echo "<div class='alert alert-success text-center mt-3 mb-3'>Welcome back $current_user->display_name.<br /> ";
 											echo "You are currently logged in.<br /><br /><br />Please choose an option below.</div>";
 										?>
 									</div>

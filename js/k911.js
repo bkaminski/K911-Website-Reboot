@@ -49,7 +49,9 @@ var $ = jQuery.noConflict();
 
 		//Login Page Items
 		$("#loginform-k911").find('p').addClass('form-group').css("color", "#000");
-		$("#user_login, #user_pass").addClass('form-control');
+		$(".btn-logout").find('a').addClass('btn btn-info btn-rounded btn-block mb-2 mt-2');
+		$(".btn-admin").find('a').addClass('btn btn-success btn-rounded btn-block mb-2 mt-2');
+		$("#user_login, #user_pass").addClass('form-control form-control-lg');
 		$("#wp-submit").removeClass('button button-primary').addClass('btn btn-info btn-rounded-dark pr-5 pl-5');
 		
 	//End Ready	
