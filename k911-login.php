@@ -49,10 +49,12 @@ get_header(); ?>
 									?>
 									</div>
 									<div class="card-footer">
-										<?php
-											wp_loginout( home_url() ); 
-											echo " | ";
-											wp_register('', ''); 
+										<div class="col-md">
+											<?php wp_loginout( home_url() ); ?>
+										</div> 
+										<div class="col-md">
+											<?php wp_register('', ''); ?>
+										</div>
 										}?>
 									</div>
   							</div>
