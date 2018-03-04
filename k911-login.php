@@ -42,10 +42,10 @@ get_header(); ?>
 									<div class="card-footer">
 										<div class="row">
 											<div class="col-md">
-												<a class="btn btn-warning btn-rounded btn-block" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a>
+												<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password</a>
 											</div>
 											<div class="col-md">
-												<a class="btn btn-success btn-rounded btn-block" href="<?php echo wp_registration_url(); ?>">Create Account</a>
+												<a class="btn btn-success btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_registration_url(); ?>">Create Account</a>
 											</div>
 										</div>
 										<?php
@@ -76,8 +76,8 @@ get_header(); ?>
 			<?php the_tags('Related Topics: ' , '&nbsp;', ''); ?>
 		</div>
 		<!-- end WordPress Loop -->
-			<?php endwhile; else : ?>
-				<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
-			<?php endif; ?>
+		<?php endwhile; else : ?>
+			<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
+		<?php endif; ?>
 	</main>
 <?php get_footer(); ?>
