@@ -75,13 +75,13 @@ add_filter( 'post_thumbnail_html', 'bootstrap_fluid_images', 10 );
 
 //Footer Custom Widget Area 1
 register_sidebar(array(
-  	'name' => __( 'K911 Footer Left Side' , 'K911_Theme' ),
-  	'id' => 'k911_footer_menu_left',
-  	'description' => __( 'Footer Widget Area' , 'K911_Theme' ),
-  	'before_widget' => '',
-  	'after_widget'  => '',
-  	'before_title' => '<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
-  	'after_title' => '</h3>'
+    'name' => __( 'K911 Footer Left Side' , 'K911_Theme' ),
+    'id' => 'k911_footer_menu_left',
+    'description' => __( 'Footer Widget Area' , 'K911_Theme' ),
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
+    'after_title' => '</h3>'
 ));
 
 //Change WP Emails and email address away from "WordPress" as sender
@@ -205,8 +205,8 @@ add_filter( 'login_headertitle', 'k911_login_logo_url_title' );
 
 //ADMIN SECTION FAVICON ITEMS TO <head> SECTION
 function k911Favicon() {
- echo '<link rel="Icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/media/favicon-32x32.png" />
- <link rel="Shortcut Icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>media/favicon-32x32.png" />';
+ echo '<link rel="Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-WordPress-Theme/media/favicon-32x32.png" />
+ <link rel="Shortcut Icon" type="image/x-icon" href="http://s233122301.onlinehome.us/k911/wp-content/themes/K911-WordPress-Theme/media/favicon-32x32.png" />';
  }
  add_action( 'login_head', 'k911Favicon' );
  add_action( 'admin_head', 'k911Favicon' );
@@ -227,3 +227,43 @@ add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_style', 10 );
 add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_script', 1 );
 
 //================================================================= END STYLE LOGIN SCREEN
+
+
+add_action('wp_login','wpdb_capture_user_last_login', 10, 2);
+function wpdb_capture_user_last_login($user_login, $user){
+    update_user_meta($user->ID, 'last_login', current_time('mysql'));
+}
+
+add_filter( 'manage_users_columns', 'wpdb_user_last_login_column');
+function wpdb_user_last_login_column($columns){
+    $columns['lastlogin'] = __('Last Login', 'lastlogin');
+    return $columns;
+}
+ 
+add_action( 'manage_users_custom_column',  'wpdb_add_user_last_login_column', 10, 3); 
+function wpdb_add_user_last_login_column($value, $column_name, $user_id ) {
+    if ( 'lastlogin' != $column_name )
+        return $value;
+ 
+    return get_user_last_login($user_id,false);
+}
+ 
+function get_user_last_login($user_id,$echo = true){
+    $date_format = get_option('date_format') . ' ' . get_option('time_format');
+    $last_login = get_user_meta($user_id, 'last_login', true);
+    $login_time = 'No previous logins on record.';
+    if(!empty($last_login)){
+       if(is_array($last_login)){
+            $login_time = mysql2date($date_format, array_pop($last_login), false);
+        }
+        else{
+            $login_time = mysql2date($date_format, $last_login, false);
+        }
+    }
+    if($echo){
+        echo $login_time;
+    }
+    else{
+        return $login_time;
+    }
+}

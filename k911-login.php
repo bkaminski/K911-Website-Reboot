@@ -52,8 +52,14 @@ get_header(); ?>
 										</div>
 										<?php
 										} else {
-											echo "<div class='alert alert-success text-center mt-3 mb-3'>Welcome back $current_user->display_name.<br /> ";
-											echo "You are currently logged in.<br /><br /><br />Please choose an option below.</div>";
+											echo "<div class='alert alert-success text-center mt-3 mb-3'>Welcome back $current_user->display_name.<br />";
+											echo "<small>You last logged in on: <br />"; ?>
+											<em><?php get_user_last_login($user_id); ?></em>
+											</small>
+											<br />
+											<br />
+											<?php 
+											echo "You are currently logged in.<br /><br /><i class='fas fa-check fa-fw fa-3x'></i><br /><br />Please choose an option below.</div>";
 										?>
 									</div>
 									<div class="card-footer">
