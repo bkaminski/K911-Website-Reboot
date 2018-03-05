@@ -227,16 +227,3 @@ add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_style', 10 );
 add_action( 'login_enqueue_scripts', 'k911_admin_enqueue_script', 1 );
 
 //================================================================= END STYLE LOGIN SCREEN
-
-
-//associating a function to login hook
-add_action('wp_login', 'set_last_login');
- 
-//function for setting the last login
-function set_last_login($login) {
-   $user = get_userdatabylogin($login);
- 
-   //add or update the last login value for logged in user
-   update_usermeta( $user->ID, 'last_login', current_time('mysql') );
-}
-
