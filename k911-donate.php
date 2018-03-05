@@ -50,6 +50,8 @@ get_header(); ?>
 											<div class="card-body pb-4 pb-5">
 												<i class="fab fa-bitcoin fa-fw fa-3x mx-auto d-block" style="color: #f7931a;"></i>
 												<h5 class="card-title">Scan the QR Code Below to use Bitcoin:</h5>
+													<img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/media/btcqrk911.png" alt="K911 Bitcoin QR code" /> 
+													<code>6FM3Gdnf3E3exARBjnuLasBmWV78GVgLDN</code>
 												<br />
 											</div>
 											<div class="card-footer border-warning text-muted">
