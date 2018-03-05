@@ -33,8 +33,8 @@ get_header(); ?>
 													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 														<input type="hidden" name="cmd" value="_s-xclick">
 														<input type="hidden" name="hosted_button_id" value="WARE97BQM6SAJ">
-														<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" class="mx-auto d-block" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-														<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+														<input type="image" src="<?php echo get_template_directory_uri(); ?>/media/paypal-k911.png" width="80%" class="mx-auto d-block img-fluid pt-4" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+														<img alt="Donate to K911 with PayPal" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 													</form>
 											</div>
 											<div class="card-footer border-dark text-muted">
