@@ -39,24 +39,32 @@ get_header(); ?>
 												<div class="alert alert-warning" role="alert">
 													<em>After clicking the register button below, you will be sent an email to validate your email address. You should receive an email within 5 minutes of successful registration, should you not -- please check you junk email folder first -- then contact us if you're still experiencing problems.</em>
 												</div>
+												<?php do_action('register_form'); ?>
+													<input id="register" type="submit" class="btn btn-success btn-rounded-dark mb-2 mt-2 pr-5 pl-5" value="Register">
 										</div>
 										<div class="card-footer">
-											<?php do_action('register_form'); ?>
-											<input id="register" type="submit" class="btn btn-info btn-rounded pr-5 pl-5" value="Register">
+											<div class="row">
+												<div class="col-md">
+													<a class="btn btn-info btn-rounded btn-block mb-2 mt-2" href="/k911/login" title="Login Page">Back to Login</a>
+												</div>
+												<div class="col-md">
+													<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password?</a>
+												</div>
+											</div>
 										</div>
 									</form>
 									</div>
 								</div>
 							</div>
-								</div>
-							<div id="k911Tags" class="col-lg-12 k911-tags">
-								<!-- post and page tags -->
-								<?php the_tags('Related Topics: ' , '&nbsp;', ''); ?>	
-							</div>
-							<!-- end WordPress Loop -->
-							<?php endwhile; else : ?>
-								<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
-							<?php endif; ?>
+						</div>
+						<div id="k911Tags" class="col-lg-12 k911-tags">
+						<!-- post and page tags -->
+							<?php the_tags('Related Topics: ' , '&nbsp;', ''); ?>	
+						</div>
+						<!-- end WordPress Loop -->
+						<?php endwhile; else : ?>
+							<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
+						<?php endif; ?>
 				</div>
 			</div>
 		</div>

@@ -47,14 +47,12 @@ get_header(); ?>
 												<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password?</a>
 											</div>
 											<div class="col-md">
-												<a class="btn btn-success btn-rounded btn-block mb-2 mt-2" href="/k911/register/">Create Account</a>
+												<a class="btn btn-info btn-rounded btn-block mb-2 mt-2" href="/k911/register/">Create Account</a>
 											</div>
 											<?php
 											} else {
 												echo "<div class='alert alert-success text-center mt-3 mb-3'>Welcome back $current_user->display_name.<br />";
-												echo "You are currently logged in.<br /><br /><i class='fas fa-check fa-fw fa-3x'></i><br /><br />Please choose an option below.</div>";
-											?>
-											<?php
+												echo "Your last login was:<br /> ";
 												function get_last_login($user_id) {
 												   $last_login = get_user_meta($user_id, 'last_login', true);
 												   $date_format = get_option('date_format') . ' ' . get_option('time_format');
@@ -63,6 +61,7 @@ get_header(); ?>
 												}
 												$current_user = wp_get_current_user();
 												echo get_last_login($current_user->ID);
+												echo "<br />You are currently logged in.<br /><br /><i class='fas fa-check fa-fw fa-3x'></i><br /><br />Please choose an option below.</div>";
 											?>
 										</div>
 									<div class="card-footer">
