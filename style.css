@@ -22,200 +22,7 @@ outline: none;
 }
 /* ========================= End Globals ========================= */
 
-/* ========================= WordPress Image Classes ========================= */
 
-.alignnone {
-margin: 5px 20px 20px 0;
-}
-.aligncenter,
-div.aligncenter {
-display: block;
-margin: 5px auto 5px auto;
-}
-.alignright {
-float: right;
-margin: 5px 0 20px 20px;
-}
-.alignleft {
-float: left;
-margin: 5px 20px 20px 0;
-}
-a img.alignright {
-float: right;
-margin: 5px 0 20px 20px;
-}
-a img.alignnone {
-margin: 5px 20px 20px 0;
-}
-a img.alignleft {
-float: left;
-margin: 5px 20px 20px 0;
-}
-a img.aligncenter {
-display: block;
-margin-right: auto;
-margin-left: auto;
-}
-.wp-caption {
-max-width: 96%; /* Image does not overflow the content area */
-padding: 5px 3px 10px;
-text-align: center;
-border: 1px solid #f0f0f0;
-background: #d3d4d9;
-}
-.wp-caption.alignnone {
-margin: 5px 20px 20px 0;
-}
-.wp-caption.alignleft {
-margin: 5px 20px 20px 0;
-}
-.wp-caption.alignright {
-margin: 5px 0 20px 20px;
-}
-.wp-caption img {
-width: auto;
-max-width: 98.5%;
-height: auto;
-margin: 0;
-padding: 0;
-border: 0 none;
-}
-.wp-caption-text {
-font-size: 11px;
-line-height: 17px;
-margin: 0;
-padding: 0 4px 5px;
-}
-/* ========================= End WordPress Image Classes ========================= */
-
-/*  ========================= WP Plugin Overrides  ========================= */
-
-div.wpcf7-validation-errors {
-font-weight: bold;
-padding: 10px;
-color: #f9fcfa;
-border: 2px solid #000000;
-background: #dc3545;
-}
-.ngg-gallery-thumbnail-box {
-float: none;
-width: 50%;
-margin-bottom: 13px;
-}
-.ngg-gallery-thumbnail {
-border: 0 !important;
-}
-div.wpcf7 .ajax-loader {
-display: inline-block;
-visibility: hidden;
-width: 75px;
-height: 75px;
-margin-top: 20px;
-margin-left: 45%;
-padding: 0;
-border: none;
-background-image: none !important;
-}
-
-/*  ========================= End WP Plugin Overrides  ========================= */
-
-
-/* ========================= Bootstrap overrides ========================= */
-.carousel {
-max-height: 600px;
-}
-.carousel-inner {
-max-height: 600px;
-}
-.carousel-item {
-max-height: 600px;
-}
-.card-body {
-background: #f9fcfa;
-}
-.navbar {
-padding: 0.5rem 0.5rem;
-border-bottom: 6px solid #4b88a2;
-}
-.text-white {
-color: #f9fcfa !important;
-}
-.bg-dark {
-font-size: 20px;
-background-color: #000000 !important;
-}
-.navbar-dark .navbar-nav .active > .nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show > .nav-link {
-color: #f9fcfa;
-}
-.navbar-dark .navbar-nav .nav-link {
-color: #f9fcfa;
-}
-.navbar-dark .navbar-toggler {
-color: #f9fcfa !important;
-border: 2px solid #f9fcfa !important;
-border-color: #d3d4d9 !important;
-background: #4b88a2;
-}
-.btn-info {
-color: #f9fcfa;
-border-color: #59a0be;
-background-color: #4b88a2;
-}
-.btn-info:hover {
-color: #f9fcfa;
-border-color: #59a0be;
-background-color: #559cba;
-}
-.btn-warning {
-background-color: #f3ec1a;
-}
-.btn-warning:hover {
-background-color: #e0da19;
-}
-.alert-info {
-color: #f9fcfa;
-border-color: #59a0be;
-background-color: #4b88a2;
-}
-.alert-danger {
-color: #f9fcfa;
-border-color: #59a0be;
-background-color: #dc3545;
-}
-.alert-secondary {
-color: #000000;
-border-color: #666666;
-background-color: #d3d4d9;
-}
-.text-info {
-color: #4b88a2 !important;
-}
-.dropdown-menu {
-min-width: 250px;
-padding-left: 20px;
-color: #f9fcfa;
-border: 0;
-border-top-left-radius: 0;
-border-top-right-radius: 0;
-background-color: #4b88a2;
-box-shadow: 2px 2px 6px #000000;
-}
-.modal-body {
-padding: 0rem;
-background: #f9fcfa;
-}
-.dropdown-menu .nav-link:hover {
-width: 100%;
-margin-left: -18px;
-padding-left: 18px;
-opacity: 0.6;
-color: #000000 !important;
-background: #f9fcfa;
-}
-/* ========================= End Bootstrap overrides ========================= */
 
 /* ========================= Custom Styles ========================= */
 .btn-rounded {
@@ -347,7 +154,6 @@ border-bottom-color: rgb(249, 252, 250);
 border-left-color: rgb(249, 252, 250);
 background-color: #dc3545;
 }
-
 @keyframes color {
 0% {
 background-color: #dc3545;
@@ -357,8 +163,7 @@ background-color: #7d2029;
 }
 100% {
 background-color: #dc3545;
-}
-}
+}}
 /* End Pulsating color */
 .fa-toggler {
 padding-top: 10px;
@@ -401,16 +206,204 @@ background-repeat: repeat !important;
 background-position: center center !important;
 background-size: auto !important;
 }
-
 /* ========================= End Custom Styles ========================= */
 
+/* ========================= WordPress Image Classes ========================= */
+.alignnone {
+margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+display: block;
+margin: 5px auto 5px auto;
+}
+.alignright {
+float: right;
+margin: 5px 0 20px 20px;
+}
+.alignleft {
+float: left;
+margin: 5px 20px 20px 0;
+}
+a img.alignright {
+float: right;
+margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+float: left;
+margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+.wp-caption {
+max-width: 96%;
+padding: 5px 3px 10px;
+text-align: center;
+border: 1px solid #f0f0f0;
+background: #d3d4d9;
+}
+.wp-caption.alignnone {
+margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+width: auto;
+max-width: 98.5%;
+height: auto;
+margin: 0;
+padding: 0;
+border: 0 none;
+}
+.wp-caption-text {
+font-size: 11px;
+line-height: 17px;
+margin: 0;
+padding: 0 4px 5px;
+}
+/* ========================= End WordPress Image Classes ========================= */
+
+/* ========================= WP Plugin Overrides  ========================= */
+div.wpcf7-validation-errors {
+font-weight: bold;
+padding: 10px;
+color: #f9fcfa;
+border: 2px solid #000000;
+background: #dc3545;
+}
+.ngg-gallery-thumbnail-box {
+float: none;
+width: 50%;
+margin-bottom: 13px;
+}
+.ngg-gallery-thumbnail {
+border: 0 !important;
+}
+div.wpcf7 .ajax-loader {
+display: inline-block;
+visibility: hidden;
+width: 75px;
+height: 75px;
+margin-top: 20px;
+margin-left: 45%;
+padding: 0;
+border: none;
+background-image: none !important;
+}
+/* ========================= End WP Plugin Overrides  ========================= */
+
+/* ========================= Bootstrap overrides ========================= */
+.carousel {
+max-height: 600px;
+}
+.carousel-inner {
+max-height: 600px;
+}
+.carousel-item {
+max-height: 600px;
+}
+.card-body {
+background: #f9fcfa;
+}
+.navbar {
+padding: 0.5rem 0.5rem;
+border-bottom: 6px solid #4b88a2;
+}
+.text-white {
+color: #f9fcfa !important;
+}
+.bg-dark {
+font-size: 20px;
+background-color: #000000 !important;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+color: #f9fcfa;
+}
+.navbar-dark .navbar-nav .nav-link {
+color: #f9fcfa;
+}
+.navbar-dark .navbar-toggler {
+color: #f9fcfa !important;
+border: 2px solid #f9fcfa !important;
+border-color: #d3d4d9 !important;
+background: #4b88a2;
+}
+.btn-info {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #4b88a2;
+}
+.btn-info:hover {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #559cba;
+}
+.btn-warning {
+background-color: #f3ec1a;
+}
+.btn-warning:hover {
+background-color: #e0da19;
+}
+.alert-info {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #4b88a2;
+}
+.alert-danger {
+color: #f9fcfa;
+border-color: #59a0be;
+background-color: #dc3545;
+}
+.alert-secondary {
+color: #000000;
+border-color: #666666;
+background-color: #d3d4d9;
+}
+.text-info {
+color: #4b88a2 !important;
+}
+.dropdown-menu {
+min-width: 250px;
+padding-left: 20px;
+color: #f9fcfa;
+border: 0;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+background-color: #4b88a2;
+box-shadow: 2px 2px 6px #000000;
+}
+.modal-body {
+padding: 0rem;
+background: #f9fcfa;
+}
+.dropdown-menu .nav-link:hover {
+width: 100%;
+margin-left: -18px;
+padding-left: 18px;
+opacity: 0.6;
+color: #000000 !important;
+background: #f9fcfa;
+}
+/* ========================= End Bootstrap overrides ========================= */
 
 /* ========================= Media Queries ========================= */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 .k911-carousel {
@@ -425,9 +418,7 @@ font-size: 3.5rem;
 .ngg-gallery-thumbnail-box {
 float: left;
 width: 25%;
-}
-}
-
+}}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 .bg-dark {
@@ -455,9 +446,7 @@ font-size: 2.5vw;
 .dropdown-menu .nav-link:hover {
 margin-left: 0;
 padding-left: 10px;
-}
-}
-
+}}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 .bg-dark {
@@ -469,6 +458,5 @@ max-width: 100%;
 .dropdown-menu {
 margin-top: 28px;
 padding-left: 0;
-}
-}
+}}
 /* ========================= End Media Queries ========================= */
