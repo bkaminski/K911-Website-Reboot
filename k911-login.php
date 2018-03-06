@@ -74,9 +74,9 @@ get_header(); ?>
 					<!-- post and page tags -->
 					<?php the_tags('Related Topics: ' , '&nbsp;', ''); ?>
 				</div>
-				<!-- end WordPress Loop -->
-				<?php endwhile; else : ?>
-					<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
-				<?php endif; ?>
+		<!-- end WordPress Loop -->
+		<?php endwhile; else : ?>
+			<p><?php esc_html_e( 'We apologize... something went wrong. Please try again.' ); ?></p>
+		<?php endif; ?>
 </main>
 <?php get_footer(); ?>

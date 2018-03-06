@@ -21,9 +21,9 @@ get_header(); ?>
 						</div>
 							<div class="mt-5 k911-main">
 								<div class="col-md-6 mx-auto d-block">
-									<div class="card bg-secondary">
+									<div class="card bg-secondary mb-5">
 										<div class="card-header text-center">
-											<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-1"></i> Create an Account:</h3>
+											<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-1"></i> Create Account:</h3>
 										</div>
 										<?php the_content(); ?>
 										<div class="card-body">
