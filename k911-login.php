@@ -46,7 +46,7 @@ get_header(); ?>
 									<div class="card-footer">
 										<div class="row">
 											<div class="col-md">
-												<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" title="Lost Password">Lost Password?</a>
+												<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="/k911/lost-password/" title="Lost Password">Lost Password?</a>
 											</div>
 											<div class="col-md">
 												<a class="btn btn-info btn-rounded btn-block mb-2 mt-2" href="/k911/register/">Create Account</a>
