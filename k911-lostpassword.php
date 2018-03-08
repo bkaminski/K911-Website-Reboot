@@ -62,8 +62,8 @@ get_header(); ?>
 										                    $subject = 'K911 Password Recovery';
 										                    $sender = get_option('name');
 										                    
-										                    $message = 'Dear ' .$user . "\r\n"', You have recently submitted a request to reset your password on K911online.com, your new, temporary password is: '. "\r\n".
-										                    $random_password . "\r\n". "\r\n" .
+										                    $message = 'Dear ' . $user . "\r\n"', You have recently submitted a request to reset your password on K911online.com, your new, temporary password is: ' . "\r\n" . 
+										                    $random_password . "\r\n" . "\r\n" .
 										                    'Upon successful login, please visit your user profile and change the password to something secure and memorable. Please let us know of any problems.';
 										                    
 										                    $headers[] = 'MIME-Version: 1.0' . "\r\n";
