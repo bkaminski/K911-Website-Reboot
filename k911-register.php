@@ -19,17 +19,18 @@ get_header(); ?>
 								<?php the_title(); ?>
 							</h1>
 						</div>
-							<div class="mt-5 k911-main">
+							<div class="mt-4 k911-main">
+							<!-- page content -->
+							<?php the_content(); ?>
 								<div class="col-md-6 mx-auto d-block">
 									<div class="card bg-secondary mb-5">
 										<div class="card-header text-center">
 											<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-1"></i> Create Account:</h3>
 										</div>
-										<?php the_content(); ?>
 										<div class="card-body">
 											<form action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" class="user_new" id="user_new" method="post">
 												<div class="form-group">
-													<label>Select a Username</label>
+													<label>Select a Username:</label>
 													<input id="user_login" class="form-control-lg" name="user_login" size="30" type="text" placeholder="">
 												</div>
 												<div class="form-group">

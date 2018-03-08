@@ -19,7 +19,9 @@ get_header(); ?>
 							<?php the_title(); ?>
 						</h1>
 					</div>
-					<div class="mt-5 k911-main">
+					<div class="mt-4 k911-main">
+						<!-- get text content -->
+						<?php the_content(); ?>
 						<div class="col-md-6 mx-auto d-block">
 							<div class="card text-white bg-secondary">
 								<div class="card-header text-center">
