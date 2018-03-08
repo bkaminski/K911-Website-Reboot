@@ -34,7 +34,7 @@ get_header(); ?>
 										        $error = '';
 										        $success = '';
 										        
-										        // check if we're in reset form
+										        										        // check if we're in reset form
 										        if( isset( $_POST['action'] ) && 'reset' == $_POST['action'] ) 
 										        {
 										            $email = trim($_POST['user_login']);
@@ -59,12 +59,10 @@ get_header(); ?>
 										                // if  update user return true then lets send user an email containing the new password
 										                if( $update_user ) {
 										                    $to = $email;
-										                    $subject = 'K911 Password Recovery';
+										                    $subject = 'Your new password';
 										                    $sender = get_option('name');
 										                    
-										                    $message = 'Dear ' . $user . "\r\n"', You have recently submitted a request to reset your password on K911online.com, your new, temporary password is: ' . "\r\n" . 
-										                    $random_password . "\r\n" . "\r\n" .
-										                    'Upon successful login, please visit your user profile and change the password to something secure and memorable. Please let us know of any problems.';
+										                    $message = 'Your new password is: '.$random_password;
 										                    
 										                    $headers[] = 'MIME-Version: 1.0' . "\r\n";
 										                    $headers[] = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -73,10 +71,10 @@ get_header(); ?>
 										                    
 										                    $mail = wp_mail( $to, $subject, $message, $headers );
 										                    if( $mail )
-										                        $success = 'Check your email for your newly reset password.';
+										                        $success = 'Check your email address for you new password.';
 										                        
 										                } else {
-										                    $error = 'There seems to be a problem updaing your account. Please try again.';
+										                    $error = 'Oops something went wrong updaing your account.';
 										                }
 										                
 										            }
