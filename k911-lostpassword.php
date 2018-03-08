@@ -59,10 +59,12 @@ get_header(); ?>
 										                // if  update user return true then lets send user an email containing the new password
 										                if( $update_user ) {
 										                    $to = $email;
-										                    $subject = 'Your new password';
+										                    $subject = 'K911 Password Recovery';
 										                    $sender = get_option('name');
 										                    
-										                    $message = 'Your new password is: '.$random_password;
+										                    $message = 'Dear ' .$user . "\r\n"', You have recently submitted a request to reset your password on K911online.com, your new, temporary password is: '. "\r\n".
+										                    $random_password . "\r\n". "\r\n" .
+										                    'Upon successful login, please visit your user profile and change the password to something secure and memorable. Please let us know of any problems.';
 										                    
 										                    $headers[] = 'MIME-Version: 1.0' . "\r\n";
 										                    $headers[] = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -71,10 +73,10 @@ get_header(); ?>
 										                    
 										                    $mail = wp_mail( $to, $subject, $message, $headers );
 										                    if( $mail )
-										                        $success = 'Check your email address for you new password.';
+										                        $success = 'Check your email for your newly reset password.';
 										                        
 										                } else {
-										                    $error = 'Oops something went wrong updaing your account.';
+										                    $error = 'There seems to be a problem updaing your account. Please try again.';
 										                }
 										                
 										            }
