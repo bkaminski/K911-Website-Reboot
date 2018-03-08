@@ -87,15 +87,17 @@ get_header(); ?>
 										        }
 										    ?>
 											<form method="post">
-												<fieldset class="form-group">
+												<fieldset>
 													<p>Please enter your username or email address. You will receive a link to create a new password via email.</p>
-													<p><label for="user_login">Username or E-mail:</label>
+													<div class="form-group">
+														<label for="user_login">Username or E-mail:</label>
 														<?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
-														<input type="text" name="user_login" class="form-control-lg" id="user_login" value="<?php echo $user_login; ?>" /></p>
-														<p>
-															<input type="hidden" name="action" value="reset" />
-															<input type="submit" value="Get New Password" class="btn btn-success btn-rounded-dark" id="submit" />
-											                </p>
+														<input type="text" name="user_login" class="form-control-lg" id="user_login" value="<?php echo $user_login; ?>" />
+													</div>
+													<div class="form-group">
+														<input type="hidden" name="action" value="reset" />
+														<input type="submit" value="Get New Password" class="btn btn-success btn-rounded-dark" id="submit" />
+											        </div>
 											    </fieldset>
 											</form>
 										</div>
