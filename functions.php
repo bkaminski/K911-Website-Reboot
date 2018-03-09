@@ -86,7 +86,7 @@ register_sidebar(array(
 
 //Change WP Emails and email address away from "WordPress" as sender
 function k911_mail_name( $email ){
-  return 'K911'; // new email name from sender.
+  return 'K911 Pet Transport'; // new email name from sender.
 }
 add_filter( 'wp_mail_from_name', 'k911_mail_name' );
 
