@@ -84,8 +84,18 @@ get_header(); ?>
 												</fieldset>
 											</form>
 										</div>
+											<div class="card-footer">
+												<div class="row">
+													<div class="col-md">
+														<a class="btn btn-info btn-rounded btn-block mb-2 mt-2" href="/k911/login" title="Login Page">Back to Login</a>
+													</div>
+													<div class="col-md">
+														<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="<?php echo home_url(); ?>" title="Back to Website">Back to Website</a>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
 							</div>
 						</div>
 						<div id="k911Tags" class="col-lg-12 k911-tags">
