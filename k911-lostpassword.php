@@ -33,13 +33,13 @@ get_header(); ?>
 										        
 										        $error = '';
 										        $success = '';
-
+										        
 										        if( isset( $_POST['action'] ) && 'reset' == $_POST['action'] ) 
 										        {
 										            $email = trim($_POST['user_login']);
 										            
 										            if( empty( $email ) ) {
-										                $error = 'Please enter as e-mail address..';
+										                $error = 'The Email field can not be empty. Enter the email used to register with K911 to reset your password.';
 										            } else if( ! is_email( $email )) {
 										                $error = 'That username was not found in our database. Please ensure it was entered correctly and try again. Usernames are case-sensitive. If you are still experincing problems, please contact us. ';
 										            } else if( ! email_exists( $email ) ) {
@@ -55,7 +55,6 @@ get_header(); ?>
 										                    )
 										                );
 										                
-										                // if  update user return true then lets send user an email containing the new password
 										                if( $update_user ) {
 										                    $to = $email;
 										                    $subject = 'K911 Password Reset Request';
@@ -87,9 +86,9 @@ get_header(); ?>
 										    ?>
 											<form method="post">
 												<fieldset>
-													<p>Please enter your username or email address. You will receive a link to create a new password via email.</p>
+													<p>Please enter your email address used to login. You will receive a link to create a new password via email.</p>
 													<div class="form-group">
-														<label for="user_login">E-mail Address used to Register:</label>
+														<label for="user_login">E-mail:</label>
 														<?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
 														<input type="text" name="user_login" class="form-control-lg" id="user_login" value="<?php echo $user_login; ?>" />
 													</div>
