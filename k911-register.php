@@ -50,7 +50,7 @@ get_header(); ?>
 																<a class="btn btn-info btn-rounded btn-block mb-2 mt-2" href="/k911/login" title="Login Page">Back to Login</a>
 															</div>
 															<div class="col-md">
-																<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="/k911-lostpassword/" title="Lost Password">Lost Password?</a>
+																<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="/k911/lost-password/" title="Lost Password">Lost Password?</a>
 															</div>
 														</div>
 													</div>
