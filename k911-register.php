@@ -28,32 +28,34 @@ get_header(); ?>
 											<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-1"></i> Create Account:</h3>
 										</div>
 										<div class="card-body">
-											<form action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" class="user_new" id="user_new" method="post">
-												<div class="form-group">
-													<label>Select a Username:</label>
-													<input id="user_login" class="form-control-lg" name="user_login" size="30" type="text" placeholder="">
-												</div>
-												<div class="form-group">
-													<label>Email Address:</label>
-													<input id="user_email" name="user_email" class="form-control form-control-lg" type="text" placeholder="">
-												</div>
-												<div class="alert alert-warning" role="alert">
-													<em>After clicking the register button below, you will be sent an email to validate your email address. You should receive an email within 5 minutes of successful registration, should you not -- please check you junk email folder first -- then contact us if you're still experiencing problems.</em>
-												</div>
-												<?php do_action('register_form'); ?>
-													<input id="register" type="submit" class="btn btn-success btn-rounded-dark mb-2 mt-2 pr-5 pl-5" value="Register">
+											<fieldset>
+												<form action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" class="user_new" id="user_new" method="post">
+													<div class="form-group">
+														<label>Select a Username:</label>
+														<input id="user_login" class="form-control-lg" name="user_login" size="30" type="text" placeholder="">
+													</div>
+													<div class="form-group">
+														<label>Email Address:</label>
+														<input id="user_email" name="user_email" class="form-control form-control-lg" type="text" placeholder="">
+													</div>
+													<div class="alert alert-warning" role="alert">
+														<em>After clicking the register button below, you will be sent an email to validate your email address. You should receive an email within 5 minutes of successful registration, should you not -- please check you junk email folder first -- then contact us if you're still experiencing problems.</em>
+													</div>
+													<?php do_action('register_form'); ?>
+														<input id="register" type="submit" class="btn btn-success btn-rounded-dark mb-2 mt-2 pr-5 pl-5" value="Register">
 										</div>
-										<div class="card-footer">
-											<div class="row">
-												<div class="col-md">
-													<a class="btn btn-info btn-rounded btn-block mb-2 mt-2" href="/k911/login" title="Login Page">Back to Login</a>
-												</div>
-												<div class="col-md">
-													<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="/k911-lostpassword/" title="Lost Password">Lost Password?</a>
-												</div>
-											</div>
-										</div>
-									</form>
+													<div class="card-footer">
+														<div class="row">
+															<div class="col-md">
+																<a class="btn btn-info btn-rounded btn-block mb-2 mt-2" href="/k911/login" title="Login Page">Back to Login</a>
+															</div>
+															<div class="col-md">
+																<a class="btn btn-warning btn-rounded btn-block mb-2 mt-2" href="/k911-lostpassword/" title="Lost Password">Lost Password?</a>
+															</div>
+														</div>
+													</div>
+												</form>
+											</fieldset>
 									</div>
 								</div>
 							</div>
