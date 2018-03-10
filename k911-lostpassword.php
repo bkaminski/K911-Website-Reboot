@@ -33,14 +33,13 @@ get_header(); ?>
 										        
 										        $error = '';
 										        $success = '';
-										        
-										        										        // check if we're in reset form
+
 										        if( isset( $_POST['action'] ) && 'reset' == $_POST['action'] ) 
 										        {
 										            $email = trim($_POST['user_login']);
 										            
 										            if( empty( $email ) ) {
-										                $error = 'Please enter a username or e-mail address..';
+										                $error = 'Please enter as e-mail address..';
 										            } else if( ! is_email( $email )) {
 										                $error = 'That username was not found in our database. Please ensure it was entered correctly and try again. Usernames are case-sensitive. If you are still experincing problems, please contact us. ';
 										            } else if( ! email_exists( $email ) ) {
@@ -90,7 +89,7 @@ get_header(); ?>
 												<fieldset>
 													<p>Please enter your username or email address. You will receive a link to create a new password via email.</p>
 													<div class="form-group">
-														<label for="user_login">Username or E-mail:</label>
+														<label for="user_login">E-mail Address used to Register:</label>
 														<?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
 														<input type="text" name="user_login" class="form-control-lg" id="user_login" value="<?php echo $user_login; ?>" />
 													</div>
