@@ -1,5 +1,5 @@
 # K911 Website Re-Boot Project
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/bkaminski/K911-Website-Reboot) [![WordPress](https://img.shields.io/wordpress/v/akismet.svg?style=flat-square)](https://github.com/bkaminski/K911-Website-Reboot) [![PHP version from PHP-Eye](https://img.shields.io/php-eye/symfony/symfony.svg?style=flat-square)](https://github.com/bkaminski/K911-Website-Reboot) [![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg?style=flat-square)](https://github.com/bkaminski/K911-Website-Reboot)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/bkaminski/K911-Website-Reboot) [![WordPress](https://img.shields.io/wordpress/v/akismet.svg?style=flat-square)](https://github.com/bkaminski/K911-Website-Reboot) [![PHP version from PHP-Eye](https://img.shields.io/php-eye/symfony/symfony.svg?style=flat-square)](https://github.com/bkaminski/K911-Website-Reboot) 
 
 Design a Custom Wordpress Theme for K911 Animal Transport Service
 
