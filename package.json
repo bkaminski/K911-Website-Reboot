@@ -1,8 +1,0 @@
-{
-  "name": "K911-Website-Reboot",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-  },
-}
