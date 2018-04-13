@@ -36,7 +36,7 @@
 
 
 							<!-- Call in comments loop -->
-							<?php if ( comments_open() || get_comments_number() ) :comments_template(); endif; ?>
+							<?php // if ( comments_open() || get_comments_number() ) :comments_template(); endif; ?>
 
 
 

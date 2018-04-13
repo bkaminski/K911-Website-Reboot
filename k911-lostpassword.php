@@ -37,7 +37,7 @@ get_header(); ?>
 											if( empty( $email ) ) {
 												$error = 'The Email field can not be empty. Enter the email used to register with K911 to reset your password.';
 											} else if( ! is_email( $email )) {
-												$error = 'Please use your email address for account recovery. We do not permit username entry for security purposes. If you are still experiencing problems, please contact us. ';
+												$error = 'Please use your email address for account recovery. We do not permit username entry for security purposes. If you are still experincing problems, please contact us. ';
 											} else if( ! email_exists( $email ) ) {
 												$error = 'There is no user registered with that email address. Please create an account or contact us for assistance.';
 											} else {

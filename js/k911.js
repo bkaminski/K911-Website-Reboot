@@ -21,7 +21,7 @@ var $ = jQuery.noConflict();
 		$("#menu-k911-menu").find('a').addClass('nav-link mr-3');
 
 		//Add Styles to WordPress Tags
-		$("#k911Tags").find('a').addClass('badge badge-pill badge-success pt-0');
+		$("#k911Tags").find('a').addClass('badge badge-pill badge-success pt-1');
 
 		//Add Image Class to Featured image on Home Page
 		$("#featImg").find('img').addClass('img-thumbnail');
@@ -29,7 +29,14 @@ var $ = jQuery.noConflict();
 		//Add img-thumbnail Bootstrap class to news page tumbs
 		$(".k911-news-img").find('img').addClass('img-thumbnail');
 
-
+		//Hover effect on Ben's logo
+		$("img.a").hover(
+			function() {
+				$(this).stop().animate({"opacity": "0"}, "slow");
+			},
+			function() {
+				$(this).stop().animate({"opacity": "1"}, "slow");
+		});
 
 		//Align NGG Images
 		$(".ngg-gallery-thumbnail").find('img').addClass('mx-auto d-block img-thumbnail');

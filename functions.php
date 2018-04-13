@@ -3,19 +3,18 @@
 //Load Main Scripts
 function enqueue_k911_scripts()
 {
-    wp_enqueue_script('Ajax-Popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', false, null, true, null);
-    wp_enqueue_script('Bootstrap-4x', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), null, true, null);
+    wp_enqueue_script('Ajax-Popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', false, null, true, null);
+    wp_enqueue_script('Bootstrap-4.1.0', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', false, null, true, null);
     wp_enqueue_script('k911-scripts', get_template_directory_uri() . '/js/k911.js', array('jquery'), null, true, null);
     wp_enqueue_script('cookie-js', get_template_directory_uri() . '/js/cookie.min.js', false, null, true, null);
-
 }
 add_action('wp_enqueue_scripts', 'enqueue_k911_scripts');
 
 //Load CSS
 function enqueue_k911_styles()
 {
-    wp_enqueue_style('bootstrap4.0-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', array(), null);
+    wp_enqueue_style('bootstrap-4.1.0', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css', array(), null);
     wp_enqueue_style('k911-styles', get_template_directory_uri() . '/style.css', array(), null);
 }
 add_action('wp_enqueue_scripts', 'enqueue_k911_styles');
@@ -72,13 +71,13 @@ add_filter( 'post_thumbnail_html', 'bootstrap_fluid_images', 10 );
 
 //Footer Custom Widget Area 1
 register_sidebar(array(
-    'name' => __( 'K911 Footer Left Side' , 'K911_Theme' ),
-    'id' => 'k911_footer_menu_left',
-    'description' => __( 'Footer Widget Area' , 'K911_Theme' ),
-    'before_widget' => '',
-    'after_widget'  => '',
-    'before_title' => '<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
-    'after_title' => '</h3>'
+  	'name' => __( 'K911 Footer Left Side' , 'K911_Theme' ),
+  	'id' => 'k911_footer_menu_left',
+  	'description' => __( 'Footer Widget Area' , 'K911_Theme' ),
+  	'before_widget' => '',
+  	'after_widget'  => '',
+  	'before_title' => '<h3 class="text-white"><i class="fas fa-paw fa-fw fa-lg mr-2"></i>',
+  	'after_title' => '</h3>'
 ));
 
 //Change WP Emails and email address away from "WordPress" as sender
@@ -88,7 +87,7 @@ function k911_mail_name( $email ){
 add_filter( 'wp_mail_from_name', 'k911_mail_name' );
 
 function k911_mail_from ($email ){
-  return 'k911de@gmail.com'; // new email address from sender.
+  return 'info@k911online.com'; // new email address from sender.
 }
 add_filter( 'wp_mail_from', 'k911_mail_from' );
 

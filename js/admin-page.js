@@ -14,4 +14,5 @@ $(document).ready(function () {
     $(".message").removeClass('message').addClass('alert alert-info text-center');
     $("#nav").addClass('text-center').find('a').addClass('btn btn-success btn-sm btn-rounded-dark text-white pr-5 pl-5');
     $("#backtoblog").addClass('text-center');
+    //$("#login_error").addClass('alert alert-info');
 });

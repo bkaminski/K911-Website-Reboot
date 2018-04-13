@@ -1,8 +1,19 @@
 <!doctype html>
 	<html lang="en">
 		<head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117412487-1"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-117412487-1');
+			</script>
+
 	    	<meta charset="utf-8">
 	    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="msvalidate.01" content="E4F5FA02C51943257359F1B364428943" />
 		    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-57x57.png">
 			<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-60x60.png">
 			<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-72x72.png">
@@ -51,4 +62,5 @@
 			          <button onclick="location.href='tel:1-302-746-6006'" class="btn btn-lg d-none d-lg-block text-uppercase btn-rounded mr-3 help-button" type="button">Get Help Now</button>
 			        </div>
 		      	</div>
-			</nav>
+		    </nav>
+		    
