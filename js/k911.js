@@ -71,9 +71,11 @@ var $window = $(window);
      function checkWidth() {
         if ($window.width() < 750) {
             $(".k911-news-img").find('img').addClass('mx-auto d-block');
+            $(".social").find('svg').removeClass('fa-fw fa-lg');
         };
         if ($window.width() >= 750) {
             $(".k911-news-img").find('img').removeClass('mx-auto d-block');
+            $(".social").find('svg').addClass('fa-fw fa-lg');
         }
     }
     // Execute on load
