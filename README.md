@@ -1,5 +1,5 @@
 # K911 Website Re-Boot Project
-[![Open Source Love](https://img.shields.io/badge/Open%20Source-%20%E2%9D%A4%20-ff69b4.svg)](https://opensource.org/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)](https://github.com/bkaminski/K911-Website-Reboot/) [![PHP version from PHP-Eye](https://img.shields.io/php-eye/symfony/symfony.svg)](https://github.com/bkaminski/K911-Website-Reboot/) [![Bootstrap version from Bootstrap](https://img.shields.io/badge/Bootstrap-v4.0.0-563d7c.svg)](https://getbootstrap.com/)
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-%20%E2%9D%A4%20-ff69b4.svg)](https://opensource.org/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)](https://github.com/bkaminski/K911-Website-Reboot/) [![PHP version from PHP-Eye](https://img.shields.io/php-eye/symfony/symfony.svg)](https://github.com/bkaminski/K911-Website-Reboot/) [![Bootstrap version from Bootstrap](https://img.shields.io/badge/Bootstrap-v4.1.0-563d7c.svg)](https://getbootstrap.com/)
 
 Design a Custom Wordpress Theme for K911 Animal Transport Service
 
@@ -14,7 +14,7 @@ All I ask in return is to be notified when and if you decide to use this theme u
 <a href="https://web.archive.org/web/20170929060439/http://www.k911online.com/">Available Here</a>
 
 ### Phase 1: WordPress Theme Development
-It has been decided that moving the website to a CMS platform such as WordPress will provide for an easier to update website for the client. That being said, this repo is only tracking the WordPress "Theme" that is being built for the client. No need to track the entire WordPress engine. This theme will work on any WP build as an active parent theme and will be delivered via .zip file as all other WP themes are.
+It has been decided that moving the website to a CMS platform such as WordPress wipll provide for an easier to update website for the client. That being said, this repo is only tracking the WordPress "Theme" that is being built for the client. No need to track the entire WordPress engine. This theme will work on any WP build as an active parent theme and will be delivered via .zip file as all other WP themes are.
 
 Theme customizer options will be added to the theme in order to allow client to update specific portions of the website with ease. Bootstrap 4 is being used to handle the need for a responsive library that is mobile-first.
 
