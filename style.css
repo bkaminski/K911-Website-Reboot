@@ -23,6 +23,13 @@ outline: none;
 /* ========================= End Globals ========================= */
 
 /* ========================= Custom Styles ========================= */
+.copyright {
+font-size: 10px;
+}
+.sub-footer {
+background: #222222;
+min-height: 50px;
+}
 .social-nav:hover {
 color: #000000;
 transition: 0.2s fade-in-out;
@@ -30,16 +37,17 @@ transition: 0.2s fade-in-out;
 div.fadehover {
 position: relative;
 }
-
 img.a {
 position: absolute;
 right: 0;
 top: 0;
+margin-top: -2px;
 z-index: 10;
 }	
 img.b {
 position: absolute;
 right: 0;
+margin-top: -2px;
 top: 0;
 }
 .btn-rounded {
@@ -107,7 +115,7 @@ background: #f9fcfa;
 .k911-footer {
 width: 100%;
 min-height: 300px;
-padding-bottom: 2px;
+padding-bottom: 0px;
 border-top: 6px solid #f3ec1a;
 background: #000000;
 }
@@ -423,6 +431,9 @@ background: #f9fcfa;
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+small.copyright {
+font-size: 14px;
+}
 .k911-carousel {
 margin-top: 0;
 }

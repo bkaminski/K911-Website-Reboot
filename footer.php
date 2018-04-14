@@ -5,14 +5,14 @@
 	 			<?php dynamic_sidebar( 'k911_footer_menu_left' ); ?>
 	 		</div>
 	 		<div class="col-md pt-3">
-	 			<h3 class="text-white"><i class="fas fa-users fa-fw fa-lg mr-3"></i>Subscribe:</h3>
+	 			<h3 class="text-white"><i class="far fa-envelope fa-fw fa-lg mr-3"></i>Subscribe:</h3>
 	 			<?php echo do_shortcode('[mc4wp_form id="326"]'); ?>
 	 		</div>
 		</div>
-		<div class="row mt-4" style="background: #222222;">
+		<div class="row mt-4 sub-footer">
 			<div class="col pt-3">
 				<p class="text-white">
-					<small>Copyright &copy; <?php echo date(Y); ?> K911</small>
+					<small class="copyright">Copyright &copy; <?php echo date(Y); ?> K911</small>
 				</p>
 			</div>
 			<div class="col pt-3 text-center">
