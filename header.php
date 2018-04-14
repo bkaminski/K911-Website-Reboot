@@ -1,20 +1,9 @@
 <!doctype html>
 	<html lang="en">
 		<head>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117412487-1"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-
-			  gtag('config', 'UA-117412487-1');
-			</script>
-
-	    	<meta charset="utf-8">
-	    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			<meta name="msvalidate.01" content="E4F5FA02C51943257359F1B364428943" />
-		    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-57x57.png">
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-57x57.png">
 			<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-60x60.png">
 			<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-72x72.png">
 			<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-76x76.png">
@@ -31,8 +20,8 @@
 			<meta name="msapplication-TileColor" content="#ffffff">
 			<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/media/ms-icon-144x144.png">
 			<meta name="theme-color" content="#ffffff">
-		    <title><?php echo get_bloginfo('name'); ?></title>
-		    <?php wp_head(); ?>
+			<title><?php echo get_bloginfo('name'); ?></title>
+			<?php wp_head(); ?>
 	  	</head>
 		<body <?php body_class(); ?>>
 		  	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
