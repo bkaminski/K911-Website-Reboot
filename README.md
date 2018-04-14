@@ -25,8 +25,8 @@ The final product will be a fully functional CMS using WordPress that will allow
 #### Dependencies:
 Most dependencies being called in via functions.php and CDN.
 <ul>
-<li>WordPress 4.9.x</li>
-<li>Bootstrap 4.0.0</li>
+<li>WordPress 4.9.5</li>
+<li>Bootstrap 4.1.0</li>
 <li>jQuery Ver. 1.12.4</li>
 <li>FontAwesome Ver. 5.0.6</li>
 <li>Ajax Popper JS</li>
